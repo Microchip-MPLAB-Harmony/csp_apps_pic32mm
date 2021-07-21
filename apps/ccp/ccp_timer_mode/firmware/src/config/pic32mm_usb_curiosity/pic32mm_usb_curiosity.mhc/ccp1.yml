@@ -1,0 +1,103 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: ccp1}
+children:
+- type: Symbols
+  children:
+  - type: Hex
+    attributes: {id: CCPCON1_REG_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccp1, value: '480'}
+  - type: KeyValueSet
+    attributes: {id: CCP_CCPCON1_CLKSEL}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1'}
+  - type: Boolean
+    attributes: {id: CCP_CCPCON1_T32}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+  - type: KeyValueSet
+    attributes: {id: CCP_CCPCON1_TMRPS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '3'}
+  - type: Integer
+    attributes: {id: CCP_CLOCK_FREQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccp1, value: '62500'}
+  - type: Long
+    attributes: {id: CCP_COMP_CCPPR}
+    children:
+    - type: Attributes
+      children:
+      - type: Long
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '4294967295'}
+  - type: Long
+    attributes: {id: CCP_COMP_CCPRA}
+    children:
+    - type: Attributes
+      children:
+      - type: Long
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '4294967295'}
+  - type: Long
+    attributes: {id: CCP_COMP_CCPRB}
+    children:
+    - type: Attributes
+      children:
+      - type: Long
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '4294967295'}
+  - type: Long
+    attributes: {id: CCP_PERIOD}
+    children:
+    - type: Attributes
+      children:
+      - type: Long
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '4294967295'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccp1, value: '62499'}
+  - type: Integer
+    attributes: {id: CCP_PRESCALER_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccp1, value: '64'}
+  - type: Float
+    attributes: {id: CCP_TIME_PERIOD_MS}
+    children:
+    - type: Attributes
+      children:
+      - type: Float
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '6.871948E7'}
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1000.0'}
+- type: ElementPosition
+  attributes: {x: '321', y: '20', id: ccp1}
