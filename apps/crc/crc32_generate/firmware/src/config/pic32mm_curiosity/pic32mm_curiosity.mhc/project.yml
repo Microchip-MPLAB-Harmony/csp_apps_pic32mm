@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 99DB74296DF9943C474F4F03A700C790
-- generatedChecksum: 1F4424FCECB9B0E36962370306781E10
+- generatedChecksum: F85145C20D559F6AE609D2D7AA69F63E
   logicalPath: config/pic32mm_curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1F4424FCECB9B0E36962370306781E10
+  userChecksum: F85145C20D559F6AE609D2D7AA69F63E
 - generatedChecksum: 4B6A778CF4449A8EC938F5D4D0917E56
   logicalPath: config/pic32mm_curiosity
   name: interrupts.c
@@ -27,13 +27,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
-- generatedChecksum: 229F88A1C12238B0348D9DB3225DF830
+- generatedChecksum: 6856B2AA115406B823C35A8FB517E420
   logicalPath: config/pic32mm_curiosity/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 229F88A1C12238B0348D9DB3225DF830
+  userChecksum: 6856B2AA115406B823C35A8FB517E420
 - generatedChecksum: 108DEB04DF62F7356A7A8D39A6697616
   logicalPath: config/pic32mm_curiosity/peripheral/crc
   name: plib_crc.c
@@ -111,13 +111,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F71A20BA61477D7082FBF03703A4CD38
-- generatedChecksum: F693093204B64681BD415495886233C7
+- generatedChecksum: 79BED542A3857DF7D83656EE2F7B329D
   logicalPath: config/pic32mm_curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: F693093204B64681BD415495886233C7
+  userChecksum: 79BED542A3857DF7D83656EE2F7B329D
 - generatedChecksum: 9C14D01C2E2E7837B2A9FB7768E80A03
   logicalPath: config/pic32mm_curiosity/peripheral/uart
   name: plib_uart2.h
@@ -139,13 +139,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: 3D141119C3B62A40C9963302D497B220
+- generatedChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
   logicalPath: config/pic32mm_curiosity
   name: p32MM0064GPL036.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 3D141119C3B62A40C9963302D497B220
+  userChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
 format_version: v1.0
 libraries: []
 settings:
