@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 99DB74296DF9943C474F4F03A700C790
-- generatedChecksum: 98E553E7E73ADD7857EC1821F0C963A9
+- generatedChecksum: 234D1C22753F485FC9C319A99CDC9CDD
   logicalPath: config/pic32mm_curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 98E553E7E73ADD7857EC1821F0C963A9
+  userChecksum: 234D1C22753F485FC9C319A99CDC9CDD
 - generatedChecksum: FEA5FE6A1B5C5C4F400F7C5C93BFC2DC
   logicalPath: config/pic32mm_curiosity
   name: interrupts.c
@@ -27,13 +27,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
-- generatedChecksum: 87E4D39C5BE0B06BC7B178961B13A3EA
+- generatedChecksum: 053E4CC73A1E23925BBBDF243ACD6E3A
   logicalPath: config/pic32mm_curiosity/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 87E4D39C5BE0B06BC7B178961B13A3EA
+  userChecksum: 053E4CC73A1E23925BBBDF243ACD6E3A
 - generatedChecksum: 67D13A897A6F89E36BB967991D15E1EC
   logicalPath: config/pic32mm_curiosity/peripheral/evic
   name: plib_evic.c
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F71A20BA61477D7082FBF03703A4CD38
-- generatedChecksum: F693093204B64681BD415495886233C7
+- generatedChecksum: 79BED542A3857DF7D83656EE2F7B329D
   logicalPath: config/pic32mm_curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: F693093204B64681BD415495886233C7
+  userChecksum: 79BED542A3857DF7D83656EE2F7B329D
 - generatedChecksum: A9C21E81CB403E638EEB811A7780088B
   logicalPath: config/pic32mm_curiosity/peripheral/spi/spi_master
   name: plib_spi1_master.h
@@ -125,13 +125,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: 3D141119C3B62A40C9963302D497B220
+- generatedChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
   logicalPath: config/pic32mm_curiosity
   name: p32MM0064GPL036.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 3D141119C3B62A40C9963302D497B220
+  userChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
 format_version: v1.0
 libraries: []
 settings:
