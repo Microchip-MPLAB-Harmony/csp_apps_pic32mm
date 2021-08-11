@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 99DB74296DF9943C474F4F03A700C790
-- generatedChecksum: D4AF8AE59C314B5CDDD1367124C8AA05
+- generatedChecksum: 2C71E7D1C488420BD1161E0FF7EF9000
   logicalPath: config/pic32mm_usb_curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D4AF8AE59C314B5CDDD1367124C8AA05
+  userChecksum: 2C71E7D1C488420BD1161E0FF7EF9000
 - generatedChecksum: DF4FDCA48FF3E50233754D4E363F48C9
   logicalPath: config/pic32mm_usb_curiosity
   name: interrupts.c
@@ -20,20 +20,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DF4FDCA48FF3E50233754D4E363F48C9
-- generatedChecksum: F81A00E640818EDFB9E79C9BD241AEF4
+- generatedChecksum: null
   logicalPath: ''
   name: main.c
   physicalPath: ../..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F81A00E640818EDFB9E79C9BD241AEF4
-- generatedChecksum: 98E2EECAB2E2144092200FD0262E1EA6
+  userChecksum: null
+- generatedChecksum: 436B7E0A82019776BE6B22C95D69F5B9
   logicalPath: config/pic32mm_usb_curiosity/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 98E2EECAB2E2144092200FD0262E1EA6
+  userChecksum: 436B7E0A82019776BE6B22C95D69F5B9
 - generatedChecksum: E19AE62EF1F5C36E4ECE56386A14C04F
   logicalPath: config/pic32mm_usb_curiosity/peripheral/evic
   name: plib_evic.c
@@ -104,13 +104,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 471535DBA871A956FB7FAC6C66FCD8C1
-- generatedChecksum: 76F98F5D5ED4C2833AE90CDE124BBE1B
+- generatedChecksum: D0226D294D437AF5854104B8AD97C8CE
   logicalPath: config/pic32mm_usb_curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 76F98F5D5ED4C2833AE90CDE124BBE1B
+  userChecksum: D0226D294D437AF5854104B8AD97C8CE
 - generatedChecksum: 0A4995F0AEBD0733D8972FC0F6F8F247
   logicalPath: config/pic32mm_usb_curiosity/peripheral/rtcc
   name: plib_rtcc.h
@@ -139,13 +139,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+- generatedChecksum: C469F285BA2018DB29C8BEBCBE863C37
   logicalPath: config/pic32mm_usb_curiosity
   name: p32MM0256GPM064.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+  userChecksum: C469F285BA2018DB29C8BEBCBE863C37
 format_version: v1.0
 libraries: []
 settings:
