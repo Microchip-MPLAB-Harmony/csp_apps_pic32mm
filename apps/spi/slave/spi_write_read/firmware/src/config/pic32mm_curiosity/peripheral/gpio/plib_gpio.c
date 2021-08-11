@@ -64,18 +64,16 @@ void GPIO_Initialize ( void )
 {
 
     /* PORTA Initialization */
-
     /* PORTB Initialization */
     LATB = 0x0; /* Initial Latch Value */
     TRISBCLR = 0x8000; /* Direction Control */
     ANSELBCLR = 0xc001; /* Digital Mode Enable */
+
     /* Change Notice Enable */
     CNCONBSET = _CNCONB_ON_MASK;
     PORTB;
     IEC0SET = _IEC0_CNBIE_MASK;
-
     /* PORTC Initialization */
-
 
 
     /* PPS Input Remapping */
@@ -273,6 +271,66 @@ void GPIO_PortInterruptDisable(GPIO_PORT port, uint32_t mask)
 
 // *****************************************************************************
 /* Function:
+    void GPIO_PinIntEnable(GPIO_PIN pin, GPIO_INTERRUPT_STYLE style)
+
+  Summary:
+    Enables IO interrupt of particular style on selected IO pins of a port.
+
+  Remarks:
+    See plib_gpio.h for more details.
+*/
+void GPIO_PinIntEnable(GPIO_PIN pin, GPIO_INTERRUPT_STYLE style)
+{
+    GPIO_PORT port;
+    uint32_t mask;
+
+    port = (GPIO_PORT)(pin>>4);
+    mask =  0x1 << (pin & 0xF);
+
+    if (style == GPIO_INTERRUPT_ON_MISMATCH)
+    {
+        *(volatile uint32_t *)(&CNEN0ASET + (port * 0x40)) = mask;
+    }
+    else if (style == GPIO_INTERRUPT_ON_RISING_EDGE)
+    {
+        *(volatile uint32_t *)(&CNEN0ASET + (port * 0x40)) = mask;
+        *(volatile uint32_t *)(&CNEN1ACLR + (port * 0x40)) = mask;
+    }
+    else if (style == GPIO_INTERRUPT_ON_FALLING_EDGE)
+    {
+        *(volatile uint32_t *)(&CNEN0ACLR + (port * 0x40)) = mask;
+        *(volatile uint32_t *)(&CNEN1ASET + (port * 0x40)) = mask;
+    }
+    else if (style == GPIO_INTERRUPT_ON_BOTH_EDGES)
+    {
+        *(volatile uint32_t *)(&CNEN0ASET + (port * 0x40)) = mask;
+        *(volatile uint32_t *)(&CNEN1ASET + (port * 0x40)) = mask;
+    }
+}
+
+// *****************************************************************************
+/* Function:
+    void GPIO_PinIntDisable(GPIO_PIN pin)
+
+  Summary:
+    Disables IO interrupt on selected IO pins of a port.
+
+  Remarks:
+    See plib_gpio.h for more details.
+*/
+void GPIO_PinIntDisable(GPIO_PIN pin)
+{
+    GPIO_PORT port;
+    uint32_t mask;
+    
+    port = (GPIO_PORT)(pin>>4);
+    mask =  0x1 << (pin & 0xF);
+
+    *(volatile uint32_t *)(&CNEN0ACLR + (port * 0x40)) = mask;
+    *(volatile uint32_t *)(&CNEN1ACLR + (port * 0x40)) = mask;
+}
+// *****************************************************************************
+/* Function:
     bool GPIO_PinInterruptCallbackRegister(
         GPIO_PIN pin,
         const GPIO_PIN_CALLBACK callback,
@@ -325,6 +383,7 @@ bool GPIO_PinInterruptCallbackRegister(
   Remarks:
 	It is an internal function called from ISR, user should not call it directly.
 */
+    
 void CHANGE_NOTICE_B_InterruptHandler(void)
 {
     uint8_t i;
