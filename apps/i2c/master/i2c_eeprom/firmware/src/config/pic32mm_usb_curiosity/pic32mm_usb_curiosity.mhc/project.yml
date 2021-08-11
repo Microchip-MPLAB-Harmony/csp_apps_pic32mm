@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 99DB74296DF9943C474F4F03A700C790
-- generatedChecksum: 1DB92D1A68A1A71A0B2A9B605FD9C479
+- generatedChecksum: 275D067DACAD6A3C0EA0FA8508D22601
   logicalPath: config/pic32mm_usb_curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1DB92D1A68A1A71A0B2A9B605FD9C479
+  userChecksum: 275D067DACAD6A3C0EA0FA8508D22601
 - generatedChecksum: 8CF253056C8EFB49DA481DCB75C30821
   logicalPath: config/pic32mm_usb_curiosity
   name: interrupts.c
@@ -20,20 +20,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8CF253056C8EFB49DA481DCB75C30821
-- generatedChecksum: F81A00E640818EDFB9E79C9BD241AEF4
+- generatedChecksum: null
   logicalPath: ''
   name: main.c
   physicalPath: ../..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F81A00E640818EDFB9E79C9BD241AEF4
-- generatedChecksum: 5546575BFDAF5852F4585D7134F16D5F
+  userChecksum: null
+- generatedChecksum: ADB292B966781A4FE083ADA8520E1EF1
   logicalPath: config/pic32mm_usb_curiosity/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5546575BFDAF5852F4585D7134F16D5F
+  userChecksum: ADB292B966781A4FE083ADA8520E1EF1
 - generatedChecksum: 3DD10D8278D0E531EC0AF45FF714DFD6
   logicalPath: config/pic32mm_usb_curiosity/peripheral/evic
   name: plib_evic.c
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 471535DBA871A956FB7FAC6C66FCD8C1
-- generatedChecksum: C122A700F4589958380EA91526466AA3
+- generatedChecksum: BA5EAF95642C1844979EFD458746D1C8
   logicalPath: config/pic32mm_usb_curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: C122A700F4589958380EA91526466AA3
+  userChecksum: BA5EAF95642C1844979EFD458746D1C8
 - generatedChecksum: 407D8CE5F0C091BCEBB78967FECBE53E
   logicalPath: config/pic32mm_usb_curiosity/peripheral/i2c/master
   name: plib_i2c1_master.h
@@ -125,13 +125,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+- generatedChecksum: C469F285BA2018DB29C8BEBCBE863C37
   logicalPath: config/pic32mm_usb_curiosity
   name: p32MM0256GPM064.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+  userChecksum: C469F285BA2018DB29C8BEBCBE863C37
 format_version: v1.0
 libraries: []
 settings:
