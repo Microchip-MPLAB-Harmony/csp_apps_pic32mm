@@ -59,6 +59,13 @@ children:
       children:
       - type: User
         attributes: {value: '3'}
+  - type: Integer
+    attributes: {id: CCP_CLOCK_FREQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccp1, value: '24000000'}
   - type: File
     attributes: {id: CCP_COMPARE_HEADER}
     children:
@@ -84,6 +91,13 @@ children:
       children:
       - type: User
         attributes: {value: Capture}
+  - type: Long
+    attributes: {id: CCP_PERIOD}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccp1, value: '7199'}
   - type: File
     attributes: {id: CCP_TIMER_HEADER}
     children:
