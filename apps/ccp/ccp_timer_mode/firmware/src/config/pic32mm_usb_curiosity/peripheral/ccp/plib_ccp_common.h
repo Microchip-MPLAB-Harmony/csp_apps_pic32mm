@@ -113,16 +113,15 @@ typedef struct
 
   Description:
     When a match is asserted, a callback can be activated.
-    Use CCP_CALLBACK as the function pointer to register the callback
+    Use CCP_CAPTURE_CALLBACK as the function pointer to register the callback
     with the match.
 
   Remarks:
     The callback should look like:
-      void callback(handle, context);
-	Make sure the return value and parameters of the callback are correct.
+      void callback(context);
 */
 
-typedef void (*CCP_CAPTURE_CALLBACK)(uint32_t status, uintptr_t context);
+typedef void (*CCP_CAPTURE_CALLBACK)(uintptr_t context);
 
 // *****************************************************************************
 
@@ -134,6 +133,35 @@ typedef struct
     uintptr_t context;
 
 }CCP_CAPTURE_OBJECT;
+
+// *****************************************************************************
+/* CCP_COMPARE_CALLBACK
+
+  Summary:
+    Use to register a callback with the CCP Compare module.
+
+  Description:
+    When a match is asserted, a callback can be activated.
+    Use CCP_COMPARE_CALLBACK as the function pointer to register the callback
+    with the match.
+
+  Remarks:
+    The callback should look like:
+      void callback(context);
+*/
+
+typedef void (*CCP_COMPARE_CALLBACK)(uintptr_t context);
+
+// *****************************************************************************
+
+typedef struct
+{
+    /*TMR callback function happens on comapre match*/
+    CCP_COMPARE_CALLBACK callback_fn;
+
+    /* - Client data (Event Context) that will be passed to callback */
+    uintptr_t context;
+}CCP_COMPARE_OBJECT;
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
