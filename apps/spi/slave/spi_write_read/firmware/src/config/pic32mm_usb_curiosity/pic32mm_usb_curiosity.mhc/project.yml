@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 99DB74296DF9943C474F4F03A700C790
-- generatedChecksum: 68AF69E1875560D42678D9BA24A62A3C
+- generatedChecksum: A8786CFF633D6ED442B7F0203EA1809B
   logicalPath: config/pic32mm_usb_curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 68AF69E1875560D42678D9BA24A62A3C
+  userChecksum: A8786CFF633D6ED442B7F0203EA1809B
 - generatedChecksum: 9CB8B3D91BA611BD12D8824C467782C7
   logicalPath: config/pic32mm_usb_curiosity
   name: interrupts.c
@@ -20,20 +20,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 9CB8B3D91BA611BD12D8824C467782C7
-- generatedChecksum: F81A00E640818EDFB9E79C9BD241AEF4
+- generatedChecksum: null
   logicalPath: ''
   name: main_pic32mm_usb_curiosity.c
   physicalPath: ../..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F81A00E640818EDFB9E79C9BD241AEF4
-- generatedChecksum: 390CFC2EB9AC0A517AAA3182ADB539FF
+  userChecksum: null
+- generatedChecksum: B50B4D0523CB7062EFBA6A561DC255F3
   logicalPath: config/pic32mm_usb_curiosity/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 390CFC2EB9AC0A517AAA3182ADB539FF
+  userChecksum: B50B4D0523CB7062EFBA6A561DC255F3
 - generatedChecksum: A03E06D9027342173E267DEB2F499FA9
   logicalPath: config/pic32mm_usb_curiosity/peripheral/evic
   name: plib_evic.c
@@ -41,13 +41,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A03E06D9027342173E267DEB2F499FA9
-- generatedChecksum: 9B8FA8105C3E26FD576916D9107E9784
+- generatedChecksum: EDBBC298BF11EEBF23419B2CD04E8E33
   logicalPath: config/pic32mm_usb_curiosity/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9B8FA8105C3E26FD576916D9107E9784
+  userChecksum: EDBBC298BF11EEBF23419B2CD04E8E33
 - generatedChecksum: C3A90D2754410A23CF4109F2E1886477
   logicalPath: config/pic32mm_usb_curiosity/peripheral/spi/spi_slave
   name: plib_spi3_slave.c
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 471535DBA871A956FB7FAC6C66FCD8C1
-- generatedChecksum: E189BD26691F121E57F297E9BCAC02AD
+- generatedChecksum: B6A347C3A90D6186EC7F11199AF2E58C
   logicalPath: config/pic32mm_usb_curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: E189BD26691F121E57F297E9BCAC02AD
+  userChecksum: B6A347C3A90D6186EC7F11199AF2E58C
 - generatedChecksum: 09E7132B4F770711A1CE16F00C0BC017
   logicalPath: config/pic32mm_usb_curiosity/peripheral/spi/spi_slave
   name: plib_spi3_slave.h
@@ -125,13 +125,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+- generatedChecksum: C469F285BA2018DB29C8BEBCBE863C37
   logicalPath: config/pic32mm_usb_curiosity
   name: p32MM0256GPM064.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+  userChecksum: C469F285BA2018DB29C8BEBCBE863C37
 format_version: v1.0
 libraries: []
 settings:
