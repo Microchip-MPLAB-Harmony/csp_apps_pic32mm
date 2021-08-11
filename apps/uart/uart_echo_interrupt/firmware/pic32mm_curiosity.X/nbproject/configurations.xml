@@ -7,16 +7,16 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mm_curiosity" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f2" displayName="clk" projectFiles="true">
+            <logicalFolder name="f1" displayName="clk" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="evic" projectFiles="true">
+            <logicalFolder name="f2" displayName="evic" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/evic/plib_evic.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f3" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="uart" projectFiles="true">
+            <logicalFolder name="f4" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/uart/plib_uart_common.h</itemPath>
               <itemPath>../src/config/pic32mm_curiosity/peripheral/uart/plib_uart2.h</itemPath>
             </logicalFolder>
@@ -27,6 +27,23 @@
           <itemPath>../src/config/pic32mm_curiosity/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1"
+                     displayName="pic32mm_curiosity.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/core.yml</itemPath>
+        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/project.yml</itemPath>
+        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/uart2.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/pic32mm_curiosity/harmony-manifest-success.yml</itemPath>
+      <itemPath>uart_echo_interrupt_pic32mm_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -43,16 +60,16 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mm_curiosity" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f2" displayName="clk" projectFiles="true">
+            <logicalFolder name="f1" displayName="clk" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="evic" projectFiles="true">
+            <logicalFolder name="f2" displayName="evic" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/evic/plib_evic.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f3" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/gpio/plib_gpio.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="uart" projectFiles="true">
+            <logicalFolder name="f4" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32mm_curiosity/peripheral/uart/plib_uart2.c</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -65,22 +82,6 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/main_pic32mm_curiosity.c</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <logicalFolder name="f1"
-                     displayName="pic32mm_curiosity.mhc"
-                     projectFiles="true">
-        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/core.yml</itemPath>
-        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/project.yml</itemPath>
-        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/pic32mm_curiosity/pic32mm_curiosity.mhc/uart2.yml</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32mm_curiosity/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -100,7 +101,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MM-GPL-0XX_DFP" vendor="Microchip" version="1.3.42"/>
+        <pack name="PIC32MM-GPL-0XX_DFP" vendor="Microchip" version="1.3.48"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -132,13 +133,14 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mm_curiosity"/>
+                  value="../src;../src/config/pic32mm_curiosity;;"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -188,6 +190,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -214,7 +217,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros" value=";"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -227,6 +230,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -236,7 +240,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mm_curiosity"/>
+                  value="../src;../src/config/pic32mm_curiosity;;"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -336,19 +340,19 @@
         <property key="memories.eeprom" value="true"/>
         <property key="memories.id" value="true"/>
         <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.ranges" value="1d000000-1d00ffff"/>
+        <property key="memories.programmemory.ranges" value="1d000000-1d003fff"/>
         <property key="memories.userotp" value="true"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges" value=""/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${programoptions.preservedataflash.ranges}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges"
-                  value="${memories.eedata.default}"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
-        <property key="programoptions.uselvpprogramming" value="true"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
       </PKOBSKDEPlatformTool>
       <Tool>
         <property key="ADC 1" value="true"/>
@@ -411,6 +415,7 @@
         <property key="memories.programmemory.end" value="0x1d003fff"/>
         <property key="memories.programmemory.ranges" value="1d000000-1d003fff"/>
         <property key="memories.programmemory.start" value="0x1d000000"/>
+        <property key="memories.userotp" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programmertogo.imagename" value=""/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
