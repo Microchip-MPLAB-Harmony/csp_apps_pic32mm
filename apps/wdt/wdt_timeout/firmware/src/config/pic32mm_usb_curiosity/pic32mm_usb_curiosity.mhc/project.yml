@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 99DB74296DF9943C474F4F03A700C790
-- generatedChecksum: C8D1E2A1C3C4B6D86C434548643BB9EB
+- generatedChecksum: 442CDEEE7F0FF64A304DD78E21D049D6
   logicalPath: config/pic32mm_usb_curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C8D1E2A1C3C4B6D86C434548643BB9EB
+  userChecksum: 442CDEEE7F0FF64A304DD78E21D049D6
 - generatedChecksum: D9EB6EFB36FD765BF3939E520BF75CF8
   logicalPath: config/pic32mm_usb_curiosity
   name: interrupts.c
@@ -27,13 +27,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
-- generatedChecksum: 85F51EC7262BE41380F3DBA49DF57471
+- generatedChecksum: FE07C36C086699B2855BCDFB8F2F40EC
   logicalPath: config/pic32mm_usb_curiosity/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 85F51EC7262BE41380F3DBA49DF57471
+  userChecksum: FE07C36C086699B2855BCDFB8F2F40EC
 - generatedChecksum: F8BB2BAA74068083A80E6E229BBCF3E3
   logicalPath: config/pic32mm_usb_curiosity/peripheral/coretimer
   name: plib_coretimer.c
@@ -48,13 +48,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7D2C3BA6E898D354234B66A2EB581B4D
-- generatedChecksum: 918C0C5F869D683CDD1EF55CF1F94416
+- generatedChecksum: 62BEF2F4682610E322DDECC47BBD17B3
   logicalPath: config/pic32mm_usb_curiosity/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 918C0C5F869D683CDD1EF55CF1F94416
+  userChecksum: 62BEF2F4682610E322DDECC47BBD17B3
 - generatedChecksum: 294F464D30F83C24941CAAC097392571
   logicalPath: config/pic32mm_usb_curiosity/peripheral/uart
   name: plib_uart3.c
@@ -76,13 +76,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DB5D6981346A30FE7951D66DA5D8EB17
-- generatedChecksum: 4150BC512174EF86B758D18C72D7134A
+- generatedChecksum: 883A6AB87FEE6D8327FB7BF3E3B689D6
   logicalPath: config/pic32mm_usb_curiosity
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4150BC512174EF86B758D18C72D7134A
+  userChecksum: 883A6AB87FEE6D8327FB7BF3E3B689D6
 - generatedChecksum: E189C26B2269F8DE46033CCD0621958D
   logicalPath: config/pic32mm_usb_curiosity
   name: device.h
@@ -104,13 +104,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7066CC390335CF75126E2A50C46E3BDD
-- generatedChecksum: 0226BD65EC09EF2E2679C2C3DD7A06E8
+- generatedChecksum: 95A377B239DD305CC8CD6D191A2C6D91
   logicalPath: config/pic32mm_usb_curiosity/peripheral/coretimer
   name: plib_coretimer.h
   physicalPath: peripheral/coretimer
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0226BD65EC09EF2E2679C2C3DD7A06E8
+  userChecksum: 95A377B239DD305CC8CD6D191A2C6D91
 - generatedChecksum: 471535DBA871A956FB7FAC6C66FCD8C1
   logicalPath: config/pic32mm_usb_curiosity/peripheral/evic
   name: plib_evic.h
@@ -118,13 +118,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 471535DBA871A956FB7FAC6C66FCD8C1
-- generatedChecksum: 42F010E095C349886BA56E0227B2D7DA
+- generatedChecksum: 4D047E06A19F9C27B8546FC9CCFAAEA5
   logicalPath: config/pic32mm_usb_curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 42F010E095C349886BA56E0227B2D7DA
+  userChecksum: 4D047E06A19F9C27B8546FC9CCFAAEA5
 - generatedChecksum: 76D0274D98C0CD2504FA849177D55D6B
   logicalPath: config/pic32mm_usb_curiosity/peripheral/uart
   name: plib_uart3.h
@@ -153,13 +153,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+- generatedChecksum: C469F285BA2018DB29C8BEBCBE863C37
   logicalPath: config/pic32mm_usb_curiosity
   name: p32MM0256GPM064.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 85BC9F07F0C6F33EA64CEE00CB73E55D
+  userChecksum: C469F285BA2018DB29C8BEBCBE863C37
 format_version: v1.0
 libraries: []
 settings:

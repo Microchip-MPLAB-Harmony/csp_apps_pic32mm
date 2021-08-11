@@ -79,7 +79,7 @@
 #pragma config FWDTEN =     OFF
 
 /*** FOSCSEL ***/
-#pragma config FNOSC =      PLL
+#pragma config FNOSC =      FRCDIV
 #pragma config PLLSRC =     FRC
 #pragma config SOSCEN =    OFF
 #pragma config IESO =       ON
@@ -175,9 +175,9 @@ void SYS_Initialize ( void* data )
 
 	GPIO_Initialize();
 
+    CORETIMER_Initialize();
 	UART3_Initialize();
 
-    CORETIMER_Initialize();
 
 
 
