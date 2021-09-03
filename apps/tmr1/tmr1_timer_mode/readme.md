@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MM family
-title: TMR1 periodic interrupt 
+title: TMR1 periodic interrupt
 has_children: false
 has_toc: false
 ---
@@ -13,7 +13,7 @@ This example demonstrates how to use the TMR1 module in timer mode to generate p
 
 ## Description
 
-The TMR1 module generates 100 ms periodic interrupt. The LED is toggled in the interrupt handler to indicate periodic callback.
+The TMR1 module generates 500 ms periodic interrupt. The LED is toggled in the interrupt handler to indicate periodic callback.
 
 ## Downloading and building the application
 
