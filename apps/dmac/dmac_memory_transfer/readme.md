@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MM family
-title: DMAC memory transfer 
+title: DMAC memory transfer
 has_children: false
 has_toc: false
 ---
@@ -44,7 +44,7 @@ The following table shows the target hardware for the application projects.
   - [USB UART click board](https://www.mikroe.com/usb-uart-click)
 
 - Connect micro USB cable to the 'USB1' on the board to the computer
-- Install an [USB UART click board](https://www.mikroe.com/usb-uart-click) on to the mikroBUS socket J5
+- Install an [USB UART click board](https://www.mikroe.com/usb-uart-click) on to the mikroBUS socket J4
 - Connect mini USB cable between PC and the [USB UART click board](https://www.mikroe.com/usb-uart-click)
   - *Note: Ensure that the series resistors on the mikroBUS headers are of value 0 Ohms*
 
