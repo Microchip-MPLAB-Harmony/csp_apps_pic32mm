@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MM family
-title: SPI Master read write test application 
+title: SPI Master read write test application
 has_children: false
 has_toc: false
 ---
@@ -59,7 +59,7 @@ The following table shows the target hardware for the application projects.
     - Pin 5 - SDI
     - Pin 6 - SDO
 - Connect Pin 16 of mikroBus header J12 on SPI master to Pin 16 of mikroBus header J12 on SPI slave. Pin 16 (RB0) is configured as GPIO and serves as the slave busy pin.
-- Connect mini USB cable to the 'USB1' connector on the board to the computer
+- Connect micro USB cable to the 'USB1' connector on the board to the computer
 - *Note: Ensure that the series resistors on the mikroBUS headers are of value 0 Ohms*
 
 ### Setting up [PIC32MM Curiosity board](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320101)
@@ -71,13 +71,13 @@ The following table shows the target hardware for the application projects.
     - Pin 5 - SDI
     - Pin 6 - SDO
 - Connect Pin 16 of mikroBus header J4 on SPI master to Pin 16 of mikroBus header J4 on SPI slave. Pin 16 (RB15) is configured as GPIO and serves as the slave busy pin.
-- Connect mini USB cable to the 'USB1' connector on the board to the computer
+- Connect micro USB cable to the 'USB1' connector on the board to the computer
 - *Note: Ensure that the series resistors on the mikroBUS headers are of value 0 Ohms*
 
 ## Running the Application
 
 1. Build and Program the SPI master application project using its IDE
-2. Build and Program the SPI slave application project using its IDE. Path of the SPI Slave application within the repository is **apps/spi/slave/spi_write_read/firmware** 
+2. Build and Program the SPI slave application project using its IDE. Path of the SPI Slave application within the repository is **apps/spi/slave/spi_write_read/firmware**
 3. On the SPI master board, press switch to start reading and writing data
 2. LED on SPI master board indicates the success or failure:
     - LED is turned ON when the data read from the SPI slave matches with the data written

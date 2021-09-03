@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MM family
-title: CMP configurable reference 
+title: CMP configurable reference
 has_children: false
 has_toc: false
 ---
@@ -43,7 +43,7 @@ The following table shows the target hardware for the application projects.
 - To run the demo, the following additional hardware are required:
   - [USB UART click board](https://www.mikroe.com/usb-uart-click)
 
-- Connect mini USB cable to the 'USB1' on the board to the computer
+- Connect micro USB cable to the 'USB1' on the board to the computer
 - Install an [USB UART click board](https://www.mikroe.com/usb-uart-click) on to the mikroBUS socket J4
 - Connect mini USB cable to the [USB UART click board](https://www.mikroe.com/usb-uart-click) and PC
 - RB0 (C2INB) on J12 is the negative input, connect it to a voltage below the reference voltage (~1.6V from CVR peripheral) to trigger interrupt
