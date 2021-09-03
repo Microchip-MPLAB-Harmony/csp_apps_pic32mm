@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MM family
-title: SPI EEPROM write read 
+title: SPI EEPROM write read
 has_children: false
 has_toc: false
 ---
@@ -20,7 +20,7 @@ This example uses the SPI peripheral library to write an array of values to the 
 To clone or download this application from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mm) and then click **Clone** button to clone this repository or download as zip file.
 This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
 
-Path of the application within the repository is **apps/spi/spi_eeprom_write_read/firmware** .
+Path of the application within the repository is **apps/spi/master/spi_eeprom_write_read/firmware** .
 
 To build the application, refer to the following table and open the project using its IDE.
 
