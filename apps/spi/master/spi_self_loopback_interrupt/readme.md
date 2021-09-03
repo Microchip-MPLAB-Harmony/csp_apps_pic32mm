@@ -1,6 +1,6 @@
 ---
 parent: Harmony 3 peripheral library application examples for PIC32MM family
-title: SPI interrupt 
+title: SPI interrupt
 has_children: false
 has_toc: false
 ---
@@ -20,7 +20,7 @@ This example shows the transmit and receive operation over a SPI interface in a 
 To clone or download this application from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32mm) and then click **Clone** button to clone this repository or download as zip file.
 This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
 
-Path of the application within the repository is **apps/spi/spi_self_loopback_interrupt/firmware** .
+Path of the application within the repository is **apps/spi/master/spi_self_loopback_interrupt/firmware** .
 
 To build the application, refer to the following table and open the project using its IDE.
 
