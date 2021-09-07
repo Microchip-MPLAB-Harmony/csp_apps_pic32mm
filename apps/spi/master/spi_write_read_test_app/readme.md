@@ -59,6 +59,7 @@ The following table shows the target hardware for the application projects.
     - Pin 5 - SDI
     - Pin 6 - SDO
 - Connect Pin 16 of mikroBus header J12 on SPI master to Pin 16 of mikroBus header J12 on SPI slave. Pin 16 (RB0) is configured as GPIO and serves as the slave busy pin.
+- Connect GND pins of SPI master and SPI slave boards
 - Connect micro USB cable to the 'USB1' connector on the board to the computer
 - *Note: Ensure that the series resistors on the mikroBUS headers are of value 0 Ohms*
 
@@ -71,6 +72,7 @@ The following table shows the target hardware for the application projects.
     - Pin 5 - SDI
     - Pin 6 - SDO
 - Connect Pin 16 of mikroBus header J4 on SPI master to Pin 16 of mikroBus header J4 on SPI slave. Pin 16 (RB15) is configured as GPIO and serves as the slave busy pin.
+- Connect GND pins of SPI master and SPI slave boards
 - Connect micro USB cable to the 'USB1' connector on the board to the computer
 - *Note: Ensure that the series resistors on the mikroBUS headers are of value 0 Ohms*
 
