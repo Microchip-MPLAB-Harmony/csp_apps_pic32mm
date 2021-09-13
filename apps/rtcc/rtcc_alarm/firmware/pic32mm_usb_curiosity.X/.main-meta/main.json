@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_rtcc_alarm",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "RTCC alarm interrupt Example for PIC32MM Family",
 		"projectName": "rtcc_alarm_pic32mm_usb_curiosity",
 		"shortDescription": "This example application shows how to use the RTCC to configure the time and generate the alarm.",

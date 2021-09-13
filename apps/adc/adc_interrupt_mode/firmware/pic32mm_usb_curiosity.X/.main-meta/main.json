@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_adc_interrupt_mode",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "ADC interrupt Example for PIC32MM Family",
 		"projectName": "adc_interrupt_pic32mm_usb_curiosity",
 		"shortDescription": "This example demonstrates how to sample an analog input in interrupt mode and send the converted data to console.",

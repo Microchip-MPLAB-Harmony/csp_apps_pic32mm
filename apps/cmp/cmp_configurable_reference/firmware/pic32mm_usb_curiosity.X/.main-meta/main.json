@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_cmp_configurable_reference",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "CMP configurable reference Example for PIC32MM Family",
 		"projectName": "cmp_configurable_reference_pic32mm_usb_curiosity",
 		"shortDescription": "This example application shows how to use the CMP Peripheral library to compare voltage level on the negative input with the internal configurable reference voltage.",

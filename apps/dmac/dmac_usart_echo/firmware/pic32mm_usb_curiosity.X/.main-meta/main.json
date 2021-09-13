@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_dmac_usart_echo",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "DMAC usart echo Example for PIC32MM Family",
 		"projectName": "dmac_usart_echo_pic32mm_usb_curiosity",
 		"shortDescription": "This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes",

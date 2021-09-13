@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_wdt_timeout",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "WDT timeout Example for PIC32MM Family",
 		"projectName": "wdt_timeout_pic32mm_usb_curiosity",
 		"shortDescription": "This example application shows how the watchdog timer resets by not feeding the watchdog on switch press.",

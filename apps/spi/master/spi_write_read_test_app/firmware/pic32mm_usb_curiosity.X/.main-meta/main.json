@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_spi_write_read_test_app",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "SPI Master read write test application Example for PIC32MM Family",
 		"projectName": "spi_master_write_read_test_app_pic32mm_usb_curiosity",
 		"shortDescription": "This is a SPI Master test application which is provided to demonstrate communication between SPI master and the corresponding SPI slave application available under -  apps/spi/slave/spi_write_read/firmware ",

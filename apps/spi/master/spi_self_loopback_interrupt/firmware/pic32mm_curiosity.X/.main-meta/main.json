@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_spi_self_loopback_interrupt",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "SPI interrupt Example for PIC32MM Family",
 		"projectName": "spi_self_loopback_interrupt_pic32mm_curiosity",
 		"shortDescription": "This example application demonstrates how to use the SPI peripheral to transmit and receive a block of data using interrupt.",

@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_crc_crc32_generate",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "32-Bit CRC Generation Example for PIC32MM Family",
 		"projectName": "crc32_generate_pic32mm_curiosity",
 		"shortDescription": "This example application demonstrates how to use the CRC peripheral to compute 32-bit Cyclic Redundancy Checksum (CRC)",

@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32mm_flash_read_write",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "NVM flash read write Example for PIC32MM Family",
 		"projectName": "flash_read_write_pic32mm_usb_curiosity",
 		"shortDescription": "This example application demonstrates how to use the NVM to erase and program the internal Flash memory.",
