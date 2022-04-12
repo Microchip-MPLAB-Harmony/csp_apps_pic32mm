@@ -124,7 +124,7 @@ bool RTCC_TimeSet( struct tm *Time )
     RTCTIME = timeField;
 
     dateField = (decimaltobcd(Time->tm_year % 100) << _RTCDATE_YRONE_POSITION) & (_RTCDATE_YRONE_MASK | _RTCDATE_YRTEN_MASK);
-    dateField |= (decimaltobcd(Time->tm_mon) << _RTCDATE_MTHONE_POSITION)&(_RTCDATE_MTHONE_MASK | _RTCDATE_MTHTEN_MASK);
+    dateField |= (decimaltobcd((Time->tm_mon + 1)) << _RTCDATE_MTHONE_POSITION)&(_RTCDATE_MTHONE_MASK | _RTCDATE_MTHTEN_MASK);
     dateField |= (decimaltobcd(Time->tm_mday) << _RTCDATE_DAYONE_POSITION) & (_RTCDATE_DAYONE_MASK | _RTCDATE_DAYTEN_MASK);
     dateField |= decimaltobcd(Time->tm_wday) & _RTCDATE_WDAY_MASK;
 
@@ -159,8 +159,8 @@ void RTCC_TimeGet( struct tm  *Time )
     Time->tm_year = 10 * (bcdtodecimal((dataDate & _RTCDATE_YRTEN_MASK) >> _RTCDATE_YRTEN_POSITION)) +
                          bcdtodecimal((dataDate & _RTCDATE_YRONE_MASK) >> _RTCDATE_YRONE_POSITION);
     Time->tm_year += 2000;  /* This RTC designed for 0-99 year range.  Need to add 2000 to that. */
-    Time->tm_mon =  10 * (bcdtodecimal((dataDate & _RTCDATE_MTHTEN_MASK) >> _RTCDATE_MTHTEN_POSITION)) +
-                         bcdtodecimal((dataDate & _RTCDATE_MTHONE_MASK) >> _RTCDATE_MTHONE_POSITION);
+    Time->tm_mon = (10 * (bcdtodecimal((dataDate & _RTCDATE_MTHTEN_MASK) >> _RTCDATE_MTHTEN_POSITION)) +
+                         bcdtodecimal((dataDate & _RTCDATE_MTHONE_MASK) >> _RTCDATE_MTHONE_POSITION)) - 1;
     Time->tm_mday = 10 * (bcdtodecimal((dataDate & _RTCDATE_DAYTEN_MASK) >> _RTCDATE_DAYTEN_POSITION)) +
                          bcdtodecimal((dataDate & _RTCDATE_DAYONE_MASK) >> _RTCDATE_DAYONE_POSITION);
 
@@ -181,7 +181,7 @@ bool RTCC_AlarmSet( struct tm *alarmTime, RTCC_ALARM_MASK alarmFreq )
 
     if(RTCC_ALARM_MASK_OFF != alarmFreq)
     {
-        dataDate  = (decimaltobcd(alarmTime->tm_mon) << _RTCDATE_MTHONE_POSITION) & (_RTCDATE_MTHONE_MASK | _RTCDATE_MTHTEN_MASK);
+        dataDate  = (decimaltobcd((alarmTime->tm_mon + 1)) << _RTCDATE_MTHONE_POSITION) & (_RTCDATE_MTHONE_MASK | _RTCDATE_MTHTEN_MASK);
         dataDate |= (decimaltobcd(alarmTime->tm_mday) << _RTCDATE_DAYONE_POSITION) & (_RTCDATE_DAYONE_MASK | _RTCDATE_DAYTEN_MASK);
         dataDate |= decimaltobcd(alarmTime->tm_wday) & _RTCDATE_WDAY_MASK;
 
