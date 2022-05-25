@@ -55,13 +55,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: E90DF69DD22D7C288D371BFD714AF4F9
-- generatedChecksum: 63AB719E2216957F9829AD493B7B0FCD
+- generatedChecksum: 47C6B7CF30A8F280947E62DDAE515357
   logicalPath: config/pic32mm_usb_curiosity/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 63AB719E2216957F9829AD493B7B0FCD
+  userChecksum: 47C6B7CF30A8F280947E62DDAE515357
 - generatedChecksum: DFB3383158C5A7D8791312246B4EF10F
   logicalPath: config/pic32mm_usb_curiosity/peripheral/gpio
   name: plib_gpio.c
@@ -69,13 +69,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DFB3383158C5A7D8791312246B4EF10F
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mm_usb_curiosity/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: FE71F1082EAF45D05DFEEE0B1E70157D
   logicalPath: config/pic32mm_usb_curiosity
   name: definitions.h
@@ -146,20 +146,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: D0226D294D437AF5854104B8AD97C8CE
-- generatedChecksum: 2C8543317B3F067432097AB9BD3E8672
+- generatedChecksum: 7DC91D6D376C98802C9C2990432DE9B7
   logicalPath: config/pic32mm_usb_curiosity
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: C469F285BA2018DB29C8BEBCBE863C37
+  userChecksum: 7DC91D6D376C98802C9C2990432DE9B7
+- generatedChecksum: F4CEC9D0F29F2CB4DE8356E25430A58F
   logicalPath: config/pic32mm_usb_curiosity
   name: p32MM0256GPM064.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: C469F285BA2018DB29C8BEBCBE863C37
+  userChecksum: F4CEC9D0F29F2CB4DE8356E25430A58F
 format_version: v1.0
 libraries: []
 settings:
