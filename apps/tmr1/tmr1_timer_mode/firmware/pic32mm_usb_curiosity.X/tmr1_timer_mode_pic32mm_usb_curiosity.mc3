@@ -1,4 +1,4 @@
-<config configName="pic32mm_usb_curiosity" projectName="tmr1_timer_mode_pic32mm_usb_curiosity" configVersion="1.1" device="PIC32MM0256GPM064" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.4">
+<config configName="pic32mm_usb_curiosity" projectName="tmr1_timer_mode_pic32mm_usb_curiosity" configVersion="1.1" device="PIC32MM0256GPM064" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -15,7 +15,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -562,7 +562,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\initialization.c</file>
-         <hash>848967e7fcec7fdbc88be51bb3bbb9cea633b5541dddc76989b465e894902a8a</hash>
+         <hash>a6accac9d5d11bdff6b9bb893f0c3884273eaf67db87efea6ea351b6fc9b9e38</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\interrupts.h</file>
@@ -570,15 +570,15 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\toolchain_specifics.h</file>
-         <hash>c86ea57caade552aa8a4e7853594d481930697fdf3549b89ba0f07604894e0e8</hash>
+         <hash>9dfc75809b6eb23cee342231de51f6b382f8f7eabf8a939539cf44c0da32acbc</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\p32MM0256GPM064.ld</file>
-         <hash>4bb176c2ad37ed7a9370c233ddcdcb6fe292a9686c1f8ee6f631e63eab346089</hash>
+         <hash>b08ab7a492ffa734426f71d5b358132c3863b6c3bfab706f0a7608259882bd6c</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\evic\plib_evic.c</file>
-         <hash>a7b3bc2e3ce12e54ce2c7e8bbb4d388000f3636eae774aaee114f4f3f01e8597</hash>
+         <hash>b800fa7c3916fef8324a2a1ecddb2724d0dcd41d9792f2f9efed8da51a934282</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\device.h</file>
@@ -594,7 +594,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\stdio\xc32_monitor.c</file>
-         <hash>26e5749db654ed433fd94f6c732ef8600d0cbf5196493374cf111877c02b694e</hash>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\tmr1\plib_tmr1_common.h</file>
