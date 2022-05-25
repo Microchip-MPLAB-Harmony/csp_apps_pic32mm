@@ -67,6 +67,16 @@ void WDT_Disable( void )
     WDTCONbits.ON = 0;
 }
 
+bool WDT_IsEnabled( void )
+{
+    return((bool)WDTCONbits.ON);
+}
+
+bool WDT_IsWindowEnabled( void )
+{
+    return((bool)WDTCONbits.WDTWINEN);
+}
+
 void WDT_Clear( void )
 {
     /* Writing specific value to only upper 16 bits of WDTCON register clears WDT counter */
