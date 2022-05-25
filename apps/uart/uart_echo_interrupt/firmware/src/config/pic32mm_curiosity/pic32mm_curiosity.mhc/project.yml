@@ -34,13 +34,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DC58BA95D869689538B505A590EADAC8
-- generatedChecksum: F0D9D8CBD19B0DAC51F5C6286BD6FDF6
+- generatedChecksum: FDAC71FB0084556739CF1E6FC6EB5C73
   logicalPath: config/pic32mm_curiosity/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F0D9D8CBD19B0DAC51F5C6286BD6FDF6
+  userChecksum: FDAC71FB0084556739CF1E6FC6EB5C73
 - generatedChecksum: 3F5A6A320C8415B2BF1369204C587037
   logicalPath: config/pic32mm_curiosity/peripheral/gpio
   name: plib_gpio.c
@@ -48,20 +48,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3F5A6A320C8415B2BF1369204C587037
-- generatedChecksum: AF03CAF115B1EE71CD8F1D9D6CD0BCB6
+- generatedChecksum: 03E870E3E276F1467CB4A07BF02EE10B
   logicalPath: config/pic32mm_curiosity/peripheral/uart
   name: plib_uart2.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AF03CAF115B1EE71CD8F1D9D6CD0BCB6
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 03E870E3E276F1467CB4A07BF02EE10B
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mm_curiosity/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: 7E9FB552F6AF2B00C5376BE5058A6893
   logicalPath: config/pic32mm_curiosity
   name: definitions.h
@@ -104,13 +104,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 79BED542A3857DF7D83656EE2F7B329D
-- generatedChecksum: A1D54820E03C424235ACAAA8F91EFBA8
+- generatedChecksum: 0AD06FAB4C88DFA9B2B1773D861810CE
   logicalPath: config/pic32mm_curiosity/peripheral/uart
   name: plib_uart2.h
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: HEADER
-  userChecksum: A1D54820E03C424235ACAAA8F91EFBA8
+  userChecksum: 0AD06FAB4C88DFA9B2B1773D861810CE
 - generatedChecksum: 67EEAF539A53B6B8FD7B600ACCB3F3CA
   logicalPath: config/pic32mm_curiosity/peripheral/uart
   name: plib_uart_common.h
@@ -118,20 +118,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 67EEAF539A53B6B8FD7B600ACCB3F3CA
-- generatedChecksum: 2C8543317B3F067432097AB9BD3E8672
+- generatedChecksum: 7DC91D6D376C98802C9C2990432DE9B7
   logicalPath: config/pic32mm_curiosity
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
+  userChecksum: 7DC91D6D376C98802C9C2990432DE9B7
+- generatedChecksum: 4DDCE5162E217B3B5C5F04437A6D5FB1
   logicalPath: config/pic32mm_curiosity
   name: p32MM0064GPL036.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
+  userChecksum: 4DDCE5162E217B3B5C5F04437A6D5FB1
 format_version: v1.0
 libraries: []
 settings:

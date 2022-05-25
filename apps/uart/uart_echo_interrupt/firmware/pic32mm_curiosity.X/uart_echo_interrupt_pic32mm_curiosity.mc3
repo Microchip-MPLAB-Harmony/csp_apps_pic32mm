@@ -1,4 +1,4 @@
-<config configName="pic32mm_curiosity" projectName="uart_echo_interrupt_pic32mm_curiosity" configVersion="1.1" device="PIC32MM0064GPL036" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.4">
+<config configName="pic32mm_curiosity" projectName="uart_echo_interrupt_pic32mm_curiosity" configVersion="1.1" device="PIC32MM0064GPL036" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -15,7 +15,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -688,11 +688,11 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\src\config\pic32mm_curiosity\peripheral\uart\plib_uart2.c</file>
-         <hash>669452bc20a360a8a756cff70917b7da404a9b5b3f7bfdf9810598e8bd004aaa</hash>
+         <hash>1f811be4d8814d47ededaa7e0b8d2738eacac9ce41435ece3e4d4dae73c88ae7</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\toolchain_specifics.h</file>
-         <hash>c86ea57caade552aa8a4e7853594d481930697fdf3549b89ba0f07604894e0e8</hash>
+         <hash>9dfc75809b6eb23cee342231de51f6b382f8f7eabf8a939539cf44c0da32acbc</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\device.h</file>
@@ -704,11 +704,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\p32MM0064GPL036.ld</file>
-         <hash>329df0ed50e059dca8597fbf111002f6e221bb8901eb4e4c24dfc36fad4b0a82</hash>
+         <hash>9b1a9ea59e95cb1d036e3230f79a10a2aa7a4a590d83fc17c931e76cb59521c0</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\peripheral\uart\plib_uart2.h</file>
-         <hash>409ddb67c187240d99389b913a8d96054def60f4db867d597f92d4c192773c52</hash>
+         <hash>c3ac0a4b1189ee0a930d72cb3decee076095996e686de4d1763d272f32660629</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\definitions.h</file>
@@ -736,11 +736,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.c</file>
-         <hash>32fe87a9063ee48e5cebc78737c2ab79d4a1822cb2843d9eafd6c67761c0b75a</hash>
+         <hash>0534a97244a494b35e110d85fd4518dd8f91868e1e5271e0dc6b554fe0212fbc</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\stdio\xc32_monitor.c</file>
-         <hash>26e5749db654ed433fd94f6c732ef8600d0cbf5196493374cf111877c02b694e</hash>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\exceptions.c</file>
@@ -760,7 +760,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\initialization.c</file>
-         <hash>0a8c384c659ad9daa8721629f0ee3944f825268699f374f14940a2af3faa4ec8</hash>
+         <hash>4d1eaf33a508d2c862b4b926e04f50e3e0e53b8b5ee17ba7d699d797d2467140</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
