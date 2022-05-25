@@ -1,21 +1,21 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configurationDescriptor version="65">
-  <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
-      <logicalFolder name="f1" displayName="config" projectFiles="true">
-        <logicalFolder name="f1" displayName="pic32mm_usb_curiosity" projectFiles="true">
-          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+  <logicalFolder displayName="root" name="root" projectFiles="true">
+    <logicalFolder displayName="Header Files" name="HeaderFiles" projectFiles="true">
+      <logicalFolder displayName="config" name="f1" projectFiles="true">
+        <logicalFolder displayName="pic32mm_usb_curiosity" name="f1" projectFiles="true">
+          <logicalFolder displayName="peripheral" name="f1" projectFiles="true">
+            <logicalFolder displayName="clk" name="f1" projectFiles="true">
               <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="evic" projectFiles="true">
+            <logicalFolder displayName="evic" name="f2" projectFiles="true">
               <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/evic/plib_evic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
+            <logicalFolder displayName="gpio" name="f3" projectFiles="true">
               <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="spi" projectFiles="true">
-              <logicalFolder name="f1" displayName="spi_master" projectFiles="true">
+            <logicalFolder displayName="spi" name="f4" projectFiles="true">
+              <logicalFolder displayName="spi_master" name="f1" projectFiles="true">
                 <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/spi/spi_master/plib_spi_master_common.h</itemPath>
                 <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/spi/spi_master/plib_spi1_master.h</itemPath>
               </logicalFolder>
@@ -28,8 +28,8 @@
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
-      <logicalFolder name="f1" displayName="pic32mm_usb_curiosity.mhc" projectFiles="true">
+    <logicalFolder displayName="Important Files" name="ExternalFiles" projectFiles="true">
+      <logicalFolder displayName="pic32mm_usb_curiosity.mhc" name="f1" projectFiles="true">
         <itemPath>../src/config/pic32mm_usb_curiosity/pic32mm_usb_curiosity.mhc/core.yml</itemPath>
         <itemPath>../src/config/pic32mm_usb_curiosity/pic32mm_usb_curiosity.mhc/dfp.yml</itemPath>
         <itemPath>../src/config/pic32mm_usb_curiosity/pic32mm_usb_curiosity.mhc/GraphSettings.yml</itemPath>
@@ -41,33 +41,33 @@
       <itemPath>../src/config/pic32mm_usb_curiosity/harmony-manifest-success.yml</itemPath>
       <itemPath>spi_self_loopback_interrupt_pic32mm_usb_curiosity.mc3</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
-      <logicalFolder name="f1" displayName="config" projectFiles="true">
-        <logicalFolder name="f1" displayName="pic32mm_usb_curiosity" projectFiles="true">
+    <logicalFolder displayName="Linker Files" name="LinkerScript" projectFiles="true">
+      <logicalFolder displayName="config" name="f1" projectFiles="true">
+        <logicalFolder displayName="pic32mm_usb_curiosity" name="f1" projectFiles="true">
           <itemPath>../src/config/pic32mm_usb_curiosity/p32MM0256GPM064.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
-      <logicalFolder name="f1" displayName="config" projectFiles="true">
-        <logicalFolder name="f1" displayName="pic32mm_usb_curiosity" projectFiles="true">
-          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+    <logicalFolder displayName="Source Files" name="SourceFiles" projectFiles="true">
+      <logicalFolder displayName="config" name="f1" projectFiles="true">
+        <logicalFolder displayName="pic32mm_usb_curiosity" name="f1" projectFiles="true">
+          <logicalFolder displayName="peripheral" name="f1" projectFiles="true">
+            <logicalFolder displayName="clk" name="f1" projectFiles="true">
               <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="evic" projectFiles="true">
+            <logicalFolder displayName="evic" name="f2" projectFiles="true">
               <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/evic/plib_evic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="gpio" projectFiles="true">
+            <logicalFolder displayName="gpio" name="f3" projectFiles="true">
               <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/gpio/plib_gpio.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="spi" projectFiles="true">
-              <logicalFolder name="f1" displayName="spi_master" projectFiles="true">
+            <logicalFolder displayName="spi" name="f4" projectFiles="true">
+              <logicalFolder displayName="spi_master" name="f1" projectFiles="true">
                 <itemPath>../src/config/pic32mm_usb_curiosity/peripheral/spi/spi_master/plib_spi1_master.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f2" displayName="stdio" projectFiles="true">
+          <logicalFolder displayName="stdio" name="f2" projectFiles="true">
             <itemPath>../src/config/pic32mm_usb_curiosity/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
           <itemPath>../src/config/pic32mm_usb_curiosity/initialization.c</itemPath>
@@ -132,7 +132,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value="../src;../src/config/pic32mm_usb_curiosity;;"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32mm_usb_curiosity"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -181,7 +181,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value=";"/>
+        <property key="preprocessor-macros" value=""/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="stack-size" value=""/>
@@ -200,7 +200,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value="../src;../src/config/pic32mm_usb_curiosity;;"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32mm_usb_curiosity"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
