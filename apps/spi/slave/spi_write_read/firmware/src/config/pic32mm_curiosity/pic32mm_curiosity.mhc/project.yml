@@ -34,13 +34,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: EAF4218359D15FCD360FE7E5EBBA6D51
-- generatedChecksum: B2BF007ACFE61D47BDF5C1304B05A6B3
+- generatedChecksum: 2C5CB0A87F324FA5DFDA8E1A316326A8
   logicalPath: config/pic32mm_curiosity/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B2BF007ACFE61D47BDF5C1304B05A6B3
+  userChecksum: 2C5CB0A87F324FA5DFDA8E1A316326A8
 - generatedChecksum: 29E7D37F737B477A037235C3B80FDB0D
   logicalPath: config/pic32mm_curiosity/peripheral/gpio
   name: plib_gpio.c
@@ -55,13 +55,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 36D9DCE22AA293F8B0244EC40F9041D7
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mm_curiosity/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: 6B7B617FC787651D6D2A29094431A06A
   logicalPath: config/pic32mm_curiosity
   name: definitions.h
@@ -118,20 +118,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 0314BA0C96E3C76CC27841DFD86493E1
-- generatedChecksum: 2C8543317B3F067432097AB9BD3E8672
+- generatedChecksum: 7DC91D6D376C98802C9C2990432DE9B7
   logicalPath: config/pic32mm_curiosity
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2C8543317B3F067432097AB9BD3E8672
-- generatedChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
+  userChecksum: 7DC91D6D376C98802C9C2990432DE9B7
+- generatedChecksum: 4DDCE5162E217B3B5C5F04437A6D5FB1
   logicalPath: config/pic32mm_curiosity
   name: p32MM0064GPL036.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: EBD6E51AC74F4B4A4AC25BE63E43F94C
+  userChecksum: 4DDCE5162E217B3B5C5F04437A6D5FB1
 format_version: v1.0
 libraries: []
 settings:
