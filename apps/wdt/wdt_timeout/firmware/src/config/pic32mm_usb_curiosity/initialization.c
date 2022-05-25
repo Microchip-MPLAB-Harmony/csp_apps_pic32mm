@@ -53,6 +53,7 @@
 // Section: Configuration Bits
 // ****************************************************************************
 // ****************************************************************************
+
 /*** FDEVOPT ***/
 #pragma config SOSCHP =      OFF
 #pragma config ALTI2C =      OFF
@@ -90,6 +91,7 @@
 
 /*** FSEC ***/
 #pragma config CP =         OFF
+
 
 
 
@@ -175,9 +177,9 @@ void SYS_Initialize ( void* data )
 
 	GPIO_Initialize();
 
-    CORETIMER_Initialize();
 	UART3_Initialize();
 
+    CORETIMER_Initialize();
 
 
 
