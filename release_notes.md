@@ -8,6 +8,32 @@ nav_order: 99
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 peripheral library application examples for PIC32MM family  v3.1.0
+
+### Development kit and demo application support
+
+Following table provides number of peripheral library examples available for different development kits.
+
+| Development Kits  | MPLAB X applications |
+|:-----------------:|:-------------------:|
+| [PIC32MM USB Curiosity board](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320107) | 25 |
+| [PIC32MM Curiosity board](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320101) | 6 |
+
+### New Features
+
+- None
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- [MPLAB® X IDE v6.00](https://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® X IDE plug-ins:
+  - MPLAB® Code Configurator (MCC) v5.1.9
+- [MPLAB® XC32 C/C++ Compiler v4.10](https://www.microchip.com/mplab/compilers)
+
 ## Harmony 3 peripheral library application examples for  family  v3.0.0
 
 ### Development kit and demo application support
@@ -16,7 +42,7 @@ Following table provides number of peripheral library examples available for dif
 
 | Development Kits  | MPLAB X applications |
 |:-----------------:|:-------------------:|
-| PIC32MM USB Curiosity board](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320107) | 25 |
+| [PIC32MM USB Curiosity board](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320107) | 25 |
 | [PIC32MM Curiosity board](https://www.microchip.com/DevelopmentTools/ProductDetails/DM320101) | 6 |
 
 ### New Features
