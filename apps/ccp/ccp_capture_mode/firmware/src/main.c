@@ -51,8 +51,8 @@
 #include "definitions.h"                // SYS function prototypes
 #include "stdio.h"
 
-uint16_t capturedValue[3];
-volatile uint8_t captureIndex = 0;
+static uint16_t capturedValue[3];
+volatile static uint8_t captureIndex = 0;
 
 // *****************************************************************************
 // *****************************************************************************

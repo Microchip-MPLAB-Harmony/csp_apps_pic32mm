@@ -53,7 +53,7 @@
 #define RESET_REASON_ALL    (RCON_RESET_CAUSE_POR | RCON_RESET_CAUSE_BOR | RCON_RESET_CAUSE_IDLE | RCON_RESET_CAUSE_SLEEP | RCON_RESET_CAUSE_WDTO | \
                             RCON_RESET_CAUSE_SWR | RCON_RESET_CAUSE_EXTR | _RCON_BCFGFAIL_MASK | RCON_RESET_CAUSE_CMR | _RCON_BCFGERR_MASK | _RCON_PORCORE_MASK | _RCON_PORIO_MASK)
 
-volatile bool switch_pressed = false;
+volatile static bool switch_pressed = false;
 
 void switch_handler( GPIO_PIN pin, uintptr_t context )
 {

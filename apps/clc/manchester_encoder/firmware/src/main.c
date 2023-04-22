@@ -55,7 +55,7 @@
 #define SIZE 10
 
 /* Global variables */
-char mybuffer[]="0123456789";
+static char mybuffer[]="0123456789";
 
 
 /* This function will be called by SPI PLIB when transfer is completed */

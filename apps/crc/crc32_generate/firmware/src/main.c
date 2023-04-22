@@ -70,9 +70,9 @@
 #define CRC32_ALTERNATE_MODE        true
 
 /* Input String for Software/Hardware CRC    : 123456789 */
-const uint8_t srcBuffer[HW_CRC_TRANSFER_SIZE] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+const static uint8_t srcBuffer[HW_CRC_TRANSFER_SIZE] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
-uint32_t CACHE_ALIGN reverse_table[256] = {0};
+static uint32_t CACHE_ALIGN reverse_table[256] = {0};
 
 static uint32_t APP_bitReverse( uint32_t num, uint32_t bits)
 {
