@@ -76,7 +76,7 @@ void CCP1_TimerStart(void);
 
 void CCP1_TimerStop(void);
 
-void CCP1_Timer32bitPeriodSet(uint32_t);
+void CCP1_Timer32bitPeriodSet(uint32_t period);
 
 uint32_t CCP1_Timer32bitPeriodGet(void);
 

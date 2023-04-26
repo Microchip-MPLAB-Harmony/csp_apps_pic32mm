@@ -51,8 +51,9 @@
 
 #include "device.h"
 #include "plib_ccp1.h"
+#include "interrupts.h"
 
-static CCP_TIMER_OBJECT ccp1Obj;
+volatile static CCP_TIMER_OBJECT ccp1Obj;
 
 
 void CCP1_TimerInitialize(void)
@@ -109,14 +110,16 @@ uint32_t CCP1_TimerFrequencyGet(void)
     return (62500);
 }
 
-void CCT1_InterruptHandler (void)
+void __attribute__((used)) CCT1_InterruptHandler (void)
 {
+    /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
+    uintptr_t context = ccp1Obj.context;
     uint32_t status = IFS2bits.CCT1IF;
     IFS2CLR = _IFS2_CCT1IF_MASK;
 
     if((ccp1Obj.callback_fn != NULL))
     {
-        ccp1Obj.callback_fn(status, ccp1Obj.context);
+        ccp1Obj.callback_fn(status, context);
     }
 }
 
