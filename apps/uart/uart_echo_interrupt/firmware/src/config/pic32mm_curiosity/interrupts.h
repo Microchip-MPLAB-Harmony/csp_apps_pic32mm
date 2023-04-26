@@ -57,6 +57,10 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void UART2_RX_InterruptHandler( void );
+void UART2_TX_InterruptHandler( void );
+void UART2_ERR_InterruptHandler( void );
+
 
 
 #endif // INTERRUPTS_H

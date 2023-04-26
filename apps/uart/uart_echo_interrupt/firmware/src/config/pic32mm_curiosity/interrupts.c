@@ -60,13 +60,22 @@
 // *****************************************************************************
 
 
-void UART2_RX_InterruptHandler( void );
-void UART2_TX_InterruptHandler( void );
-void UART2_ERR_InterruptHandler( void );
-
-
-
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector declarations
+// *****************************************************************************
+// *****************************************************************************
+void UART2_RX_Handler (void);
+void UART2_TX_Handler (void);
+void UART2_ERR_Handler (void);
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: System Interrupt Vector definitions
+// *****************************************************************************
+// *****************************************************************************
 void __ISR(_UART2_RX_VECTOR, ipl1SOFT) UART2_RX_Handler (void)
 {
     UART2_RX_InterruptHandler();
