@@ -65,17 +65,17 @@
 void CLC1_Initialize( void )
 {
     /* Configure data sources */
-    CLC1SEL =  (((0x4 << _CLC1SEL_DS1_POSITION) & _CLC1SEL_DS1_MASK) |
-                ((0x0 << _CLC1SEL_DS2_POSITION) & _CLC1SEL_DS2_MASK) |
-                ((0x3 << _CLC1SEL_DS3_POSITION) & _CLC1SEL_DS3_MASK) |
-                ((0x0 << _CLC1SEL_DS4_POSITION) & _CLC1SEL_DS4_MASK));
+    CLC1SEL =  (((0x4UL << _CLC1SEL_DS1_POSITION) & _CLC1SEL_DS1_MASK) |
+                ((0x0UL << _CLC1SEL_DS2_POSITION) & _CLC1SEL_DS2_MASK) |
+                ((0x3UL << _CLC1SEL_DS3_POSITION) & _CLC1SEL_DS3_MASK) |
+                ((0x0UL << _CLC1SEL_DS4_POSITION) & _CLC1SEL_DS4_MASK));
 
     /* Configure gates */
     CLC1GLS =  (_CLC1GLS_G1D1T_MASK |
                 _CLC1GLS_G3D3T_MASK);
 
     /* Configure logic cell */
-    CLC1CON = (((0x1 << _CLC1CON_MODE_POSITION) & _CLC1CON_MODE_MASK)
+    CLC1CON = (((0x1UL << _CLC1CON_MODE_POSITION) & _CLC1CON_MODE_MASK)
                | _CLC1CON_ON_MASK 
                | _CLC1CON_LCOE_MASK );
 

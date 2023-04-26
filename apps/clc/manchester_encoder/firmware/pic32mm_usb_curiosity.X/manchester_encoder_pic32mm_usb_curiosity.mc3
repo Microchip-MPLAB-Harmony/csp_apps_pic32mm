@@ -1,4 +1,4 @@
-<config configName="pic32mm_usb_curiosity" projectName="manchester_encoder_pic32mm_usb_curiosity" configVersion="1.1" device="PIC32MM0256GPM064" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
+<config configName="pic32mm_usb_curiosity" projectName="manchester_encoder_pic32mm_usb_curiosity" configVersion="1.1" device="PIC32MM0256GPM064" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -19,7 +19,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -1372,15 +1372,15 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\interrupts.c</file>
-         <hash>744d49ebb79c3a3cc1f398ec7a821cd49f56e1d674aed8330bf9e7f9c2dadd60</hash>
+         <hash>30a27a969b71df9da001a3b939be9556362352e22789f374f6c7ddd4679af50a</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\definitions.h</file>
-         <hash>83715a5cb796e1cb87347c9fa12e9495d7dff5e340ebc1afe717badc0f7e1d72</hash>
+         <hash>3db769bfa6ecf65e2b6bc24cb028b64d111ed61ad2a150225645d18536d20b36</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\gpio\plib_gpio.c</file>
-         <hash>fdfc6b6bd1397e03528ae8b1c2114b64a12b51c21c2bac720fb88e469318269f</hash>
+         <hash>a9c44c2526498aa4716f2b399f8870ecc63f22eab95179e605b4e6675319daad</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\clc\plib_clc_common.h</file>
@@ -1388,7 +1388,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\initialization.c</file>
-         <hash>4575a9bd407a3d8c63ef4b367f131f971174768b337525008c2a56e97ec3a19b</hash>
+         <hash>0828df59c085ae56711d7d41ad80288a486874e15b7aaedda2e865c12b4c37e2</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\spi\spi_master\plib_spi_master_common.h</file>
@@ -1396,7 +1396,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\clc\plib_clc1.c</file>
-         <hash>de632e8e54acfd20e7707018d05732c39dd47881b78617a8cfbd62cb12cfb3a9</hash>
+         <hash>56879f95ee5b3d05f1655b9a72d48483394927e13e67e4f668392f3bfc175253</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\clc\plib_clc1.h</file>
@@ -1404,11 +1404,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\interrupts.h</file>
-         <hash>91abdb8d191ae865fc6082f30783c3d6cca8aa8d5aca823a7fb2cc65e3a57d24</hash>
+         <hash>5fb46988aa3a64eee42b26af95f0623a11ed38af1268634717a61bc329f9dc81</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\toolchain_specifics.h</file>
-         <hash>9dfc75809b6eb23cee342231de51f6b382f8f7eabf8a939539cf44c0da32acbc</hash>
+         <hash>38b3e0e3652463c4c84dc445fd0af062ddf1e36ce2aefeae250f3f0c4fef5685</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\p32MM0256GPM064.ld</file>
@@ -1416,7 +1416,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\evic\plib_evic.c</file>
-         <hash>fb84b35ba1d9e9614294e286d349bcc7d49712599da4db01e385386ba7b73a49</hash>
+         <hash>cae6a4b1c79a9730f7bce5cb95ba75765c5fd3e8f9456911ef33df00a01ad2c5</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\device.h</file>
@@ -1424,11 +1424,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\exceptions.c</file>
-         <hash>bacd9060af8add5471ec3170808fe766dbd651e25104b5ecc8a7ebc02935e727</hash>
+         <hash>51869a2069933bd13284df52f5f993f4e8b83ae6097dda36c4b1fc6e818df86d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\clk\plib_clk.h</file>
-         <hash>aeb73e24e5a518024b1c3f7dce953a5cbacead08f55e80ae465fc8d2e522e477</hash>
+         <hash>35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\stdio\xc32_monitor.c</file>
@@ -1436,11 +1436,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\clk\plib_clk.c</file>
-         <hash>6e53d9b3eff354dd351aaed99c4de5bd060a095be9a1055449b75db02c110491</hash>
+         <hash>2075f65ea432dbd87bc95da2a6865022a5e2201d1ac22ac6dc32b0b08589cef3</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\evic\plib_evic.h</file>
-         <hash>83dfaa1f51781177ab1034587af6db7228e671bb6a17b4e853b2846539a6b5a0</hash>
+         <hash>31dd4fb9b8a2e88ca7fb7b35ceb5887dda0f6dacd099174385db8a2433aec6de</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>
@@ -1448,7 +1448,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\gpio\plib_gpio.h</file>
-         <hash>7b08b4bb4e12ff7e882938228f3d6a33e01e936cec5300016dfdcaf0efd81b8c</hash>
+         <hash>ef55b889aedfc59e020698ff0b992e12f48798c81356604315694995dfbf2657</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\spi\spi_master\plib_spi1_master.h</file>
@@ -1456,7 +1456,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_usb_curiosity\peripheral\spi\spi_master\plib_spi1_master.c</file>
-         <hash>460e48c2bcf95f3073ffd681a5965398426039921641a2c4931de2ac5902cf25</hash>
+         <hash>476034d805fda21f80d6ee6de5c89fca57f24c39f043273b6c52a8fbd2a8a9ed</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
