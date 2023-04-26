@@ -38,8 +38,8 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef _PLIB_CCP1_H
-#define _PLIB_CCP1_H
+#ifndef PLIB_CCP1_H
+#define PLIB_CCP1_H
 
 #include <stddef.h>
 #include <stdint.h>
@@ -132,6 +132,9 @@ void CCP1_Compare16bitRBValueSet (uint16_t value);
 
 uint16_t CCP1_Compare16bitRBValueGet (void);
 
+void CCP1_CompareDeadTimeSet (uint8_t value);
+
+uint8_t CCP1_CompareDeadTimeGet (void);
 
 
 

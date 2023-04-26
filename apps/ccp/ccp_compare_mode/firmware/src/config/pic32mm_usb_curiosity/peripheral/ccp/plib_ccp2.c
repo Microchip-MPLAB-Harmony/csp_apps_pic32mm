@@ -38,7 +38,7 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 #include "plib_ccp2.h"
-
+#include "interrupts.h"
 // *****************************************************************************
 
 // *****************************************************************************
@@ -48,7 +48,7 @@
 
 // *****************************************************************************
 
-static CCP_TIMER_OBJECT ccp2TimerObj;
+volatile static CCP_TIMER_OBJECT ccp2TimerObj;
 void CCP2_CompareInitialize (void)
 {
     /* Disable Timer */
@@ -110,7 +110,7 @@ uint16_t CCP2_Compare16bitPeriodValueGet (void)
 
 void CCP2_CompareDeadTimeSet (uint8_t value)
 {
-    CCP2CON3 = (value & _CCP2CON3_DT_MASK);
+    CCP2CON3 = (uint8_t)(value & (uint8_t)_CCP2CON3_DT_MASK);
 }
 
 uint8_t CCP2_CompareDeadTimeGet (void)
@@ -125,14 +125,16 @@ void CCP2_TimerCallbackRegister(CCP_TIMER_CALLBACK callback, uintptr_t context)
     ccp2TimerObj.context = context;
 }
 
-void CCT2_InterruptHandler (void)
+void __attribute__((used)) CCT2_InterruptHandler (void)
 {
+    /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
+    uintptr_t context = ccp2TimerObj.context;
     uint32_t status = IFS2bits.CCT2IF;
     IFS2CLR = _IFS2_CCT2IF_MASK;    //Clear IRQ flag
 
     if( (ccp2TimerObj.callback_fn != NULL))
     {
-        ccp2TimerObj.callback_fn(status, ccp2TimerObj.context);
+        ccp2TimerObj.callback_fn(status, context);
     }
 }
 

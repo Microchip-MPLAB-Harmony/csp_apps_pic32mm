@@ -38,7 +38,7 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 #include "plib_ccp4.h"
-
+#include "interrupts.h"
 // *****************************************************************************
 
 // *****************************************************************************
@@ -48,7 +48,7 @@
 
 // *****************************************************************************
 
-static CCP_TIMER_OBJECT ccp4TimerObj;
+volatile static CCP_TIMER_OBJECT ccp4TimerObj;
 void CCP4_CompareInitialize (void)
 {
     /* Disable Timer */
@@ -116,14 +116,16 @@ void CCP4_TimerCallbackRegister(CCP_TIMER_CALLBACK callback, uintptr_t context)
     ccp4TimerObj.context = context;
 }
 
-void CCT4_InterruptHandler (void)
+void __attribute__((used)) CCT4_InterruptHandler (void)
 {
+    /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
+    uintptr_t context = ccp4TimerObj.context;
     uint32_t status = IFS2bits.CCT4IF;
     IFS2CLR = _IFS2_CCT4IF_MASK;    //Clear IRQ flag
 
     if( (ccp4TimerObj.callback_fn != NULL))
     {
-        ccp4TimerObj.callback_fn(status, ccp4TimerObj.context);
+        ccp4TimerObj.callback_fn(status, context);
     }
 }
 
