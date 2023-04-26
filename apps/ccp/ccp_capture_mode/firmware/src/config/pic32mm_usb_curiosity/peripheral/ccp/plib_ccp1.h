@@ -38,8 +38,8 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef _PLIB_CCP1_H
-#define _PLIB_CCP1_H
+#ifndef PLIB_CCP1_H
+#define PLIB_CCP1_H
 
 #include <stddef.h>
 #include <stdbool.h>

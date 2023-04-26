@@ -38,6 +38,7 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 #include "plib_ccp1.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 
@@ -81,7 +82,7 @@ uint16_t CCP1_Capture16bitBufferRead (void)
 bool CCP1_CaptureStatusGet (void)
 {
     bool status = false;
-    status = ((CCP1STAT >> _CCP1STAT_ICBNE_POSITION) & _CCP1STAT_ICBNE_MASK);
+    status = (((CCP1STAT >> _CCP1STAT_ICBNE_POSITION) & _CCP1STAT_ICBNE_MASK) != 0U);
     return status;
 }
 

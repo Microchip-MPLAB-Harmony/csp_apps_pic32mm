@@ -38,8 +38,8 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef _PLIB_CCP2_H
-#define _PLIB_CCP2_H
+#ifndef PLIB_CCP2_H
+#define PLIB_CCP2_H
 
 #include <stddef.h>
 #include <stdint.h>
@@ -128,6 +128,9 @@ void CCP2_Compare16bitPeriodValueSet (uint16_t value);
 uint16_t CCP2_Compare16bitPeriodValueGet (void);
 
 
+void CCP2_CompareDeadTimeSet (uint8_t value);
+
+uint8_t CCP2_CompareDeadTimeGet (void);
 
 
 

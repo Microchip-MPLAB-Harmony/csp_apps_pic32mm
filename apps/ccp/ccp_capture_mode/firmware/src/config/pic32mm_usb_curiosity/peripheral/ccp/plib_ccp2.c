@@ -38,7 +38,7 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 #include "plib_ccp2.h"
-
+#include "interrupts.h"
 // *****************************************************************************
 
 // *****************************************************************************
@@ -108,7 +108,7 @@ uint16_t CCP2_Compare16bitPeriodValueGet (void)
 
 void CCP2_CompareDeadTimeSet (uint8_t value)
 {
-    CCP2CON3 = (value & _CCP2CON3_DT_MASK);
+    CCP2CON3 = (uint8_t)(value & (uint8_t)_CCP2CON3_DT_MASK);
 }
 
 uint8_t CCP2_CompareDeadTimeGet (void)
