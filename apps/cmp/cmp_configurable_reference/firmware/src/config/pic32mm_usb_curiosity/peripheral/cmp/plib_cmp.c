@@ -39,6 +39,7 @@
 *******************************************************************************/
 
 #include "plib_cmp.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -46,7 +47,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-CMP_OBJECT cmp2Obj;
+volatile static CMP_OBJECT cmp2Obj;
 // *****************************************************************************
 
 // *****************************************************************************
@@ -68,7 +69,7 @@ void CMP_Initialize (void)
     /*  CPOL    = 0    */
     /*  COE     = false     */
     CM1CON = 0x0;
-    
+
     /*  Setup CM2CON    */
     /*  CCH     = 0    */
     /*  CREF    = 1    */
@@ -77,7 +78,7 @@ void CMP_Initialize (void)
     /*  COE     = false     */
     IEC0SET = _IEC0_CMP2IE_MASK;
     CM2CON = 0x50;
-    
+
     /*  Setup CM3CON    */
     /*  CCH     = 0    */
     /*  CREF    = 0    */
@@ -85,7 +86,7 @@ void CMP_Initialize (void)
     /*  CPOL    = 0    */
     /*  COE     = false     */
     CM3CON = 0x0;
-    
+
 }
 
 void CMP_1_CompareEnable (void)
@@ -116,7 +117,7 @@ void CMP_3_CompareDisable (void)
 
 bool CMP_StatusGet (CMP_STATUS_SOURCE ch_status)
 {
-    return ((CMSTAT & ch_status)?true:false);
+    return ((CMSTAT & ch_status) != 0U);
 }
 
 
@@ -127,12 +128,14 @@ void CMP_2_CallbackRegister(CMP_CALLBACK callback, uintptr_t context)
     cmp2Obj.context = context;
 }
 
-void COMPARATOR_2_InterruptHandler(void)
+void __attribute__((used)) COMPARATOR_2_InterruptHandler(void)
 {
     IFS0CLR = _IFS0_CMP2IF_MASK; //Clear IRQ flag
 
     if(cmp2Obj.callback != NULL)
     {
-        cmp2Obj.callback(cmp2Obj.context);
+        uintptr_t context = cmp2Obj.context;
+
+        cmp2Obj.callback(context);
     }
 }

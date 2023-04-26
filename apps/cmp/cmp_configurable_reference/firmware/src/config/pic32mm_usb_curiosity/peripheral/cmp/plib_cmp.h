@@ -38,8 +38,8 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef _PLIB_CMP_H
-#define _PLIB_CMP_H
+#ifndef PLIB_CMP_H
+#define PLIB_CMP_H
 
 #include <stddef.h>
 #include <stdbool.h>
@@ -58,13 +58,12 @@
 // *****************************************************************************
 // *****************************************************************************
 
-typedef enum
-{
+
     /*CMP Output*/
-    CMP1_OUTPUT_STATUS = _CMSTAT_C1OUT_MASK,
-    CMP2_OUTPUT_STATUS = _CMSTAT_C2OUT_MASK,
-    CMP3_OUTPUT_STATUS = _CMSTAT_C3OUT_MASK,
-} CMP_STATUS_SOURCE;
+    #define CMP1_OUTPUT_STATUS    (_CMSTAT_C1OUT_MASK)
+    #define CMP2_OUTPUT_STATUS    (_CMSTAT_C2OUT_MASK)
+    #define CMP3_OUTPUT_STATUS    (_CMSTAT_C3OUT_MASK)
+typedef uint32_t CMP_STATUS_SOURCE;
 
 typedef void (*CMP_CALLBACK) (uintptr_t context);
 
@@ -82,7 +81,7 @@ typedef struct
 
 void CMP_Initialize (void);
 
-bool CMP_StatusGet (CMP_STATUS_SOURCE source);
+bool CMP_StatusGet (CMP_STATUS_SOURCE ch_status);
 void CMP_1_CompareEnable (void);
 void CMP_1_CompareDisable (void);
 
