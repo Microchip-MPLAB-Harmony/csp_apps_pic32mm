@@ -57,6 +57,12 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void UART3_RX_InterruptHandler( void );
+void UART3_TX_InterruptHandler( void );
+void UART3_ERR_InterruptHandler( void );
+void DMA0_InterruptHandler( void );
+void DMA1_InterruptHandler( void );
+
 
 
 #endif // INTERRUPTS_H
