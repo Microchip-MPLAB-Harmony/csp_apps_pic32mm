@@ -69,6 +69,7 @@
 #define LED_OutputEnable()      (TRISDCLR = (1<<3))
 #define LED_InputEnable()       (TRISDSET = (1<<3))
 #define LED_Get()               ((PORTD >> 3) & 0x1)
+#define LED_GetLatch()          ((LATD >> 3) & 0x1)
 #define LED_PIN                  GPIO_PIN_RD3
 
 
