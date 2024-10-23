@@ -48,9 +48,9 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -77,22 +77,22 @@ void SPI2_RX_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_CHANGE_NOTICE_B_VECTOR, ipl1SOFT) CHANGE_NOTICE_B_Handler (void)
+void __attribute__((used)) __ISR(_CHANGE_NOTICE_B_VECTOR, ipl1SOFT) CHANGE_NOTICE_B_Handler (void)
 {
     CHANGE_NOTICE_B_InterruptHandler();
 }
 
-void __ISR(_SPI2_ERR_VECTOR, ipl1SOFT) SPI2_ERR_Handler (void)
+void __attribute__((used)) __ISR(_SPI2_ERR_VECTOR, ipl1SOFT) SPI2_ERR_Handler (void)
 {
     SPI2_ERR_InterruptHandler();
 }
 
-void __ISR(_SPI2_TX_VECTOR, ipl1SOFT) SPI2_TX_Handler (void)
+void __attribute__((used)) __ISR(_SPI2_TX_VECTOR, ipl1SOFT) SPI2_TX_Handler (void)
 {
     SPI2_TX_InterruptHandler();
 }
 
-void __ISR(_SPI2_RX_VECTOR, ipl1SOFT) SPI2_RX_Handler (void)
+void __attribute__((used)) __ISR(_SPI2_RX_VECTOR, ipl1SOFT) SPI2_RX_Handler (void)
 {
     SPI2_RX_InterruptHandler();
 }

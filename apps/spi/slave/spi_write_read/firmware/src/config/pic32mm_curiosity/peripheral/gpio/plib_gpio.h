@@ -69,6 +69,7 @@
 #define GPIO_RB15_OutputEnable()      (TRISBCLR = (1<<15))
 #define GPIO_RB15_InputEnable()       (TRISBSET = (1<<15))
 #define GPIO_RB15_Get()               ((PORTB >> 15) & 0x1)
+#define GPIO_RB15_GetLatch()          ((LATB >> 15) & 0x1)
 #define GPIO_RB15_PIN                  GPIO_PIN_RB15
 
 
