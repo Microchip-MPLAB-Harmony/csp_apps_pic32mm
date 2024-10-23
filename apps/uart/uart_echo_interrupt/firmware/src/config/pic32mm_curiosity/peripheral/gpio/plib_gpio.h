@@ -69,6 +69,7 @@
 #define LED1_OutputEnable()      (TRISACLR = (1<<0))
 #define LED1_InputEnable()       (TRISASET = (1<<0))
 #define LED1_Get()               ((PORTA >> 0) & 0x1)
+#define LED1_GetLatch()          ((LATA >> 0) & 0x1)
 #define LED1_PIN                  GPIO_PIN_RA0
 
 
