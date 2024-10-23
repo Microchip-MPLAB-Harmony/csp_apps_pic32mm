@@ -69,6 +69,7 @@
 #define SWITCH_OutputEnable()      (TRISBCLR = (1<<13))
 #define SWITCH_InputEnable()       (TRISBSET = (1<<13))
 #define SWITCH_Get()               ((PORTB >> 13) & 0x1)
+#define SWITCH_GetLatch()          ((LATB >> 13) & 0x1)
 #define SWITCH_PIN                  GPIO_PIN_RB13
 #define SWITCH_InterruptEnable()   (CNEN0BSET = (1<<13))
 #define SWITCH_InterruptDisable()  (CNEN0BCLR = (1<<13))
@@ -80,6 +81,7 @@
 #define LED_OutputEnable()      (TRISACLR = (1<<0))
 #define LED_InputEnable()       (TRISASET = (1<<0))
 #define LED_Get()               ((PORTA >> 0) & 0x1)
+#define LED_GetLatch()          ((LATA >> 0) & 0x1)
 #define LED_PIN                  GPIO_PIN_RA0
 
 
