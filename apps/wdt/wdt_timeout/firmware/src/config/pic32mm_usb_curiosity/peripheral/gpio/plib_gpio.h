@@ -69,6 +69,7 @@
 #define LED1_OutputEnable()      (TRISDCLR = (1<<3))
 #define LED1_InputEnable()       (TRISDSET = (1<<3))
 #define LED1_Get()               ((PORTD >> 3) & 0x1)
+#define LED1_GetLatch()          ((LATD >> 3) & 0x1)
 #define LED1_PIN                  GPIO_PIN_RD3
 
 /*** Macros for SWITCH pin ***/
@@ -78,6 +79,7 @@
 #define SWITCH_OutputEnable()      (TRISCCLR = (1<<4))
 #define SWITCH_InputEnable()       (TRISCSET = (1<<4))
 #define SWITCH_Get()               ((PORTC >> 4) & 0x1)
+#define SWITCH_GetLatch()          ((LATC >> 4) & 0x1)
 #define SWITCH_PIN                  GPIO_PIN_RC4
 #define SWITCH_InterruptEnable()   (CNEN0CSET = (1<<4))
 #define SWITCH_InterruptDisable()  (CNEN0CCLR = (1<<4))
