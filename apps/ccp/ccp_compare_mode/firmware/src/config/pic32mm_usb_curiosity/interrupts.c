@@ -48,9 +48,9 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -75,12 +75,12 @@ void CCT4_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_CCT2_VECTOR, ipl1SOFT) CCT2_Handler (void)
+void __attribute__((used)) __ISR(_CCT2_VECTOR, ipl1SOFT) CCT2_Handler (void)
 {
     CCT2_InterruptHandler();
 }
 
-void __ISR(_CCT4_VECTOR, ipl1SOFT) CCT4_Handler (void)
+void __attribute__((used)) __ISR(_CCT4_VECTOR, ipl1SOFT) CCT4_Handler (void)
 {
     CCT4_InterruptHandler();
 }
