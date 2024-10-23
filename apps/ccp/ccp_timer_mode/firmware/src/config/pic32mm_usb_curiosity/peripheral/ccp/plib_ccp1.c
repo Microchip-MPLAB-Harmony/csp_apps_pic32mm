@@ -127,13 +127,13 @@ void __attribute__((used)) CCT1_InterruptHandler (void)
 void CCP1_TimerInterruptEnable(void)
 {
 
-    IEC2SET = _IEC2_CCP1IE_MASK;
+    IEC2SET = _IEC2_CCT1IE_MASK;
 }
 
 
 void CCP1_TimerInterruptDisable(void)
 {
-    IEC2CLR = _IEC2_CCP1IE_MASK;
+    IEC2CLR = _IEC2_CCT1IE_MASK;
 }
 
 

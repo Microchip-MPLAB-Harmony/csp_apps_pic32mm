@@ -69,6 +69,7 @@
 #define LED1_OutputEnable()      (TRISDCLR = (1<<3))
 #define LED1_InputEnable()       (TRISDSET = (1<<3))
 #define LED1_Get()               ((PORTD >> 3) & 0x1)
+#define LED1_GetLatch()          ((LATD >> 3) & 0x1)
 #define LED1_PIN                  GPIO_PIN_RD3
 
 /*** Macros for GPIO_RC6 pin ***/
@@ -78,6 +79,7 @@
 #define GPIO_RC6_OutputEnable()      (TRISCCLR = (1<<6))
 #define GPIO_RC6_InputEnable()       (TRISCSET = (1<<6))
 #define GPIO_RC6_Get()               ((PORTC >> 6) & 0x1)
+#define GPIO_RC6_GetLatch()          ((LATC >> 6) & 0x1)
 #define GPIO_RC6_PIN                  GPIO_PIN_RC6
 
 
