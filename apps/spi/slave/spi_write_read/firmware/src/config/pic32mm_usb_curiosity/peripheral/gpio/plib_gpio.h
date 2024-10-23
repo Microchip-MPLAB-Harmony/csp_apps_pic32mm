@@ -69,6 +69,7 @@
 #define GPIO_RB0_OutputEnable()      (TRISBCLR = (1<<0))
 #define GPIO_RB0_InputEnable()       (TRISBSET = (1<<0))
 #define GPIO_RB0_Get()               ((PORTB >> 0) & 0x1)
+#define GPIO_RB0_GetLatch()          ((LATB >> 0) & 0x1)
 #define GPIO_RB0_PIN                  GPIO_PIN_RB0
 
 

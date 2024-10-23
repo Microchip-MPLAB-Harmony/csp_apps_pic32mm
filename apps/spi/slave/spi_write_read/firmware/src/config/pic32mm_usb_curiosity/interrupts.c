@@ -48,9 +48,9 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -77,22 +77,22 @@ void SPI3_RX_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_CHANGE_NOTICE_C_VECTOR, ipl1SOFT) CHANGE_NOTICE_C_Handler (void)
+void __attribute__((used)) __ISR(_CHANGE_NOTICE_C_VECTOR, ipl1SOFT) CHANGE_NOTICE_C_Handler (void)
 {
     CHANGE_NOTICE_C_InterruptHandler();
 }
 
-void __ISR(_SPI3_ERR_VECTOR, ipl1SOFT) SPI3_ERR_Handler (void)
+void __attribute__((used)) __ISR(_SPI3_ERR_VECTOR, ipl1SOFT) SPI3_ERR_Handler (void)
 {
     SPI3_ERR_InterruptHandler();
 }
 
-void __ISR(_SPI3_TX_VECTOR, ipl1SOFT) SPI3_TX_Handler (void)
+void __attribute__((used)) __ISR(_SPI3_TX_VECTOR, ipl1SOFT) SPI3_TX_Handler (void)
 {
     SPI3_TX_InterruptHandler();
 }
 
-void __ISR(_SPI3_RX_VECTOR, ipl1SOFT) SPI3_RX_Handler (void)
+void __attribute__((used)) __ISR(_SPI3_RX_VECTOR, ipl1SOFT) SPI3_RX_Handler (void)
 {
     SPI3_RX_InterruptHandler();
 }
