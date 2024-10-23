@@ -1,4 +1,4 @@
-<config configName="pic32mm_curiosity" projectName="spi_write_read_test_app_pic32mm_curiosity" configVersion="1.1" device="PIC32MM0064GPL036" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
+<config configName="pic32mm_curiosity" projectName="spi_write_read_test_app_pic32mm_curiosity" configVersion="1.1" device="PIC32MM0064GPL036" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -15,7 +15,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.3"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -827,14 +827,26 @@
 </value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>..\src\config\pic32mm_curiosity\toolchain_specifics.h</file>
-         <hash>38b3e0e3652463c4c84dc445fd0af062ddf1e36ce2aefeae250f3f0c4fef5685</hash>
+         <file>..\src\config\pic32mm_curiosity\definitions.h</file>
+         <hash>a524f6abdfb394062d20866a7e345622b6890fde31260491df7191d1bf8e7b5e</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\device.h</file>
          <hash>10ec93c43a7b158a129ae05bd8f4a59ff5bcf3d0f3f062fdd64c374bc2d42099</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\exceptions.c</file>
+         <hash>265c985839caadb2fa9e8fc76e7bc3c160e31e9b2c96dc4006add33e5d7ee212</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\initialization.c</file>
+         <hash>1c38930dd11d1cb89ba5701a85ceac5121fd3a1b9f683d74f5071f95d19fd1c1</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\interrupts.c</file>
+         <hash>0d32bb38aeb3d0e0ad556e5c39232ccc6a04a941d2a15f7c3df406bd18c7fbd7</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\interrupts.h</file>
@@ -842,67 +854,55 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\p32MM0064GPL036.ld</file>
-         <hash>9b1a9ea59e95cb1d036e3230f79a10a2aa7a4a590d83fc17c931e76cb59521c0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\definitions.h</file>
-         <hash>6e0df5c7ca5fa25b27b1134d0fae4f58eeb46c6055a2c12227abcc4901307423</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi2_master.c</file>
-         <hash>2326821b259bba86ce0debf6643489b2a4974b40fe014e3c3fb8a3706d0af559</hash>
-      </entry>
-      <entry>
-         <file>..\src\main_pic32mm_curiosity.c</file>
-         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi2_master.h</file>
-         <hash>5e78a42e59de34629f92f7916be364a44ed98f1fbaecd993eb121c485092d7d1</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\interrupts.c</file>
-         <hash>768c503dc92a74adc054dbd55105d3d9ff06c5b9b852309e712527a5b729e7ef</hash>
+         <hash>b0666b3654a7738979aa25d4c390bf6b0ddc8e819d2934dc349438be79605106</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\peripheral\clk\plib_clk.c</file>
-         <hash>7e55d923cd250bb69eeec9a52d3af9a73dc532e9642bd80f902f6a737ea77995</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.c</file>
-         <hash>e84f5c931c4b15b8b68dfde72ed4d6c9f183607049313dfc9b75d137e7a698a4</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.c</file>
-         <hash>3ff0bb3775795cf587e71b1152cbfbde66b42e2c95a27cd0b91e978262bb72c7</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\stdio\xc32_monitor.c</file>
-         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi_master_common.h</file>
-         <hash>844a71566e886cd1f28024000d440ac48841cdb4f4059f5feefac8e4334f12ef</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mm_curiosity\exceptions.c</file>
-         <hash>51869a2069933bd13284df52f5f993f4e8b83ae6097dda36c4b1fc6e818df86d</hash>
+         <hash>c62b341fbecd973f1934be50076bad8603c98ae05efb8ffbb5400e3bd81f1327</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\peripheral\clk\plib_clk.h</file>
          <hash>35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.h</file>
-         <hash>32667a9e7b6c8691137ed36c54b51cda9dba971eeeb165bda08f789a9bbbd3e1</hash>
+         <file>..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.c</file>
+         <hash>27435b3872bed0b620d46f7447287eac84340c792c81f90a34a421178554115d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.h</file>
-         <hash>1a20a94f8f7ce49b1f15758e8a03f6ac7d1ceb84036b215a1773e3d111b3e208</hash>
+         <hash>4e751bde98d6d45c1743efee8c9b14ab6f5bc030868ae8a990bd2753b3c58804</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mm_curiosity\initialization.c</file>
-         <hash>057bd1ec05edf41a6b9116185570ae68951403aa4142c0cab4de3744bb56e810</hash>
+         <file>..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.c</file>
+         <hash>e84f5c931c4b15b8b68dfde72ed4d6c9f183607049313dfc9b75d137e7a698a4</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.h</file>
+         <hash>f50157b71f7bd50dd4c1dcc298d0b72b52cdb54899f15e86783745ca2f0993cf</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi2_master.c</file>
+         <hash>2326821b259bba86ce0debf6643489b2a4974b40fe014e3c3fb8a3706d0af559</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi2_master.h</file>
+         <hash>5e78a42e59de34629f92f7916be364a44ed98f1fbaecd993eb121c485092d7d1</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi_master_common.h</file>
+         <hash>844a71566e886cd1f28024000d440ac48841cdb4f4059f5feefac8e4334f12ef</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\stdio\xc32_monitor.c</file>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mm_curiosity\toolchain_specifics.h</file>
+         <hash>b4de6e02e3e48c62f7ba233405ffdf6ef31bb971d1a7b49efa1676f45cabc1ac</hash>
+      </entry>
+      <entry>
+         <file>..\src\main_pic32mm_curiosity.c</file>
+         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

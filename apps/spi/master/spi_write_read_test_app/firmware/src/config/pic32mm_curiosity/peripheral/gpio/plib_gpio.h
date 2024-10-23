@@ -69,6 +69,7 @@
 #define SWITCH_OutputEnable()      (TRISBCLR = (1<<13))
 #define SWITCH_InputEnable()       (TRISBSET = (1<<13))
 #define SWITCH_Get()               ((PORTB >> 13) & 0x1)
+#define SWITCH_GetLatch()          ((LATB >> 13) & 0x1)
 #define SWITCH_PIN                  GPIO_PIN_RB13
 
 /*** Macros for APP_SLAVE_BUSY_PIN pin ***/
@@ -78,6 +79,7 @@
 #define APP_SLAVE_BUSY_PIN_OutputEnable()      (TRISBCLR = (1<<15))
 #define APP_SLAVE_BUSY_PIN_InputEnable()       (TRISBSET = (1<<15))
 #define APP_SLAVE_BUSY_PIN_Get()               ((PORTB >> 15) & 0x1)
+#define APP_SLAVE_BUSY_PIN_GetLatch()          ((LATB >> 15) & 0x1)
 #define APP_SLAVE_BUSY_PIN_PIN                  GPIO_PIN_RB15
 
 /*** Macros for LED pin ***/
@@ -87,6 +89,7 @@
 #define LED_OutputEnable()      (TRISACLR = (1<<0))
 #define LED_InputEnable()       (TRISASET = (1<<0))
 #define LED_Get()               ((PORTA >> 0) & 0x1)
+#define LED_GetLatch()          ((LATA >> 0) & 0x1)
 #define LED_PIN                  GPIO_PIN_RA0
 
 /*** Macros for APP_SLAVE_CS pin ***/
@@ -96,6 +99,7 @@
 #define APP_SLAVE_CS_OutputEnable()      (TRISBCLR = (1<<0))
 #define APP_SLAVE_CS_InputEnable()       (TRISBSET = (1<<0))
 #define APP_SLAVE_CS_Get()               ((PORTB >> 0) & 0x1)
+#define APP_SLAVE_CS_GetLatch()          ((LATB >> 0) & 0x1)
 #define APP_SLAVE_CS_PIN                  GPIO_PIN_RB0
 
 
