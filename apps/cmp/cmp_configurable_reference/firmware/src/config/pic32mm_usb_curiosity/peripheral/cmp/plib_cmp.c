@@ -59,8 +59,8 @@ void CMP_Initialize (void)
 {
     /*  Setup CMSTAT    */
     /* SIDL = false */
-    /* CVREFSEL = 1 */
-    CMSTAT = 0x100;
+    /* CVREFSEL = 0 */
+    CMSTAT = 0x0;
 
     /*  Setup CM1CON    */
     /*  CCH     = 0    */
