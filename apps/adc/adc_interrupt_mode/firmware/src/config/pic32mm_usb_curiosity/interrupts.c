@@ -48,9 +48,9 @@
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-
 #include "interrupts.h"
 #include "definitions.h"
+
 
 
 // *****************************************************************************
@@ -74,7 +74,7 @@ void ADC_Handler (void);
 // Section: System Interrupt Vector definitions
 // *****************************************************************************
 // *****************************************************************************
-void __ISR(_ADC_VECTOR, ipl1SOFT) ADC_Handler (void)
+void __attribute__((used)) __ISR(_ADC_VECTOR, ipl1SOFT) ADC_Handler (void)
 {
     ADC_InterruptHandler();
 }
