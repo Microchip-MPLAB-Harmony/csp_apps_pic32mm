@@ -69,6 +69,7 @@
 #define EEPROM_HOLD_OutputEnable()      (TRISBCLR = (1<<15))
 #define EEPROM_HOLD_InputEnable()       (TRISBSET = (1<<15))
 #define EEPROM_HOLD_Get()               ((PORTB >> 15) & 0x1)
+#define EEPROM_HOLD_GetLatch()          ((LATB >> 15) & 0x1)
 #define EEPROM_HOLD_PIN                  GPIO_PIN_RB15
 
 /*** Macros for EEPROM_CS pin ***/
@@ -78,6 +79,7 @@
 #define EEPROM_CS_OutputEnable()      (TRISBCLR = (1<<2))
 #define EEPROM_CS_InputEnable()       (TRISBSET = (1<<2))
 #define EEPROM_CS_Get()               ((PORTB >> 2) & 0x1)
+#define EEPROM_CS_GetLatch()          ((LATB >> 2) & 0x1)
 #define EEPROM_CS_PIN                  GPIO_PIN_RB2
 
 /*** Macros for EEPROM_WP pin ***/
@@ -87,6 +89,7 @@
 #define EEPROM_WP_OutputEnable()      (TRISCCLR = (1<<2))
 #define EEPROM_WP_InputEnable()       (TRISCSET = (1<<2))
 #define EEPROM_WP_Get()               ((PORTC >> 2) & 0x1)
+#define EEPROM_WP_GetLatch()          ((LATC >> 2) & 0x1)
 #define EEPROM_WP_PIN                  GPIO_PIN_RC2
 
 /*** Macros for LED1 pin ***/
@@ -96,6 +99,7 @@
 #define LED1_OutputEnable()      (TRISDCLR = (1<<3))
 #define LED1_InputEnable()       (TRISDSET = (1<<3))
 #define LED1_Get()               ((PORTD >> 3) & 0x1)
+#define LED1_GetLatch()          ((LATD >> 3) & 0x1)
 #define LED1_PIN                  GPIO_PIN_RD3
 
 
