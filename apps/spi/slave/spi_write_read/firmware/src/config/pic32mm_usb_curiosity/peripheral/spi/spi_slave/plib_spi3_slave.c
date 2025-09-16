@@ -54,12 +54,12 @@
 #define SPI3_READ_BUFFER_SIZE            256
 #define SPI3_WRITE_BUFFER_SIZE           256
 
-volatile static uint8_t SPI3_ReadBuffer[SPI3_READ_BUFFER_SIZE];
-volatile static uint8_t SPI3_WriteBuffer[SPI3_WRITE_BUFFER_SIZE];
+static volatile uint8_t SPI3_ReadBuffer[SPI3_READ_BUFFER_SIZE];
+static volatile uint8_t SPI3_WriteBuffer[SPI3_WRITE_BUFFER_SIZE];
 
 
 /* Global object to save SPI Exchange related data */
-volatile static SPI_SLAVE_OBJECT spi3Obj;
+static volatile SPI_SLAVE_OBJECT spi3Obj;
 
 #define SPI3_CON_CKP                        (0UL << _SPI3CON_CKP_POSITION)
 #define SPI3_CON_CKE                        (1UL << _SPI3CON_CKE_POSITION)
