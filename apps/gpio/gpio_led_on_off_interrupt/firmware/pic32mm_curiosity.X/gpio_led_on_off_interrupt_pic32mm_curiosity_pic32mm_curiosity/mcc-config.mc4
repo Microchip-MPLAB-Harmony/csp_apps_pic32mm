@@ -1,0 +1,42 @@
+configVersion: 1.0.0
+coreVersion: 5.8.2
+device: PIC32MM0064GPL036
+deviceLibrary:
+  className: com.microchip.mcc.harmony.Harmony3Library
+groupModules: []
+modules:
+- core
+- dfp
+generatedFileHashHistoryMap:
+- file: ..\src\config\pic32mm_curiosity\definitions.h
+  hash: 6e3dd26b9f142a5c5f08c8b815294223444ebc0782eb8df791bfc95db97f2b08
+- file: ..\src\config\pic32mm_curiosity\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\pic32mm_curiosity\exceptions.c
+  hash: 265c985839caadb2fa9e8fc76e7bc3c160e31e9b2c96dc4006add33e5d7ee212
+- file: ..\src\config\pic32mm_curiosity\initialization.c
+  hash: 3abefe53d5d05176fb869afd00f1aaacda227c2de93589e45df19c257604326f
+- file: ..\src\config\pic32mm_curiosity\interrupts.c
+  hash: 67a501c063744f86d69b5f809f85e4373762582beccf1607c8605c463fa2ba71
+- file: ..\src\config\pic32mm_curiosity\interrupts.h
+  hash: 7a29d95c93227162bc6558bb67790f3076e79ba76cadd5407aaa81d584c14d8b
+- file: ..\src\config\pic32mm_curiosity\p32MM0064GPL036.ld
+  hash: b0666b3654a7738979aa25d4c390bf6b0ddc8e819d2934dc349438be79605106
+- file: ..\src\config\pic32mm_curiosity\peripheral\clk\plib_clk.c
+  hash: 56464964fa95461b687fcd3e107affac0a1eedc786fcd7c44e118a9ec58efae5
+- file: ..\src\config\pic32mm_curiosity\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.c
+  hash: 32d2da6ffb53be8e56ad2b378b1016b146165021587634adf7a49cace4865e93
+- file: ..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.h
+  hash: 4e751bde98d6d45c1743efee8c9b14ab6f5bc030868ae8a990bd2753b3c58804
+- file: ..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.c
+  hash: fe54d30b677032bebd96476b48fe8aebeef3e7219c945ebe8018d62745abd3a9
+- file: ..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.h
+  hash: 766c84485ed96ff4acf0fb009d8e2994d3006c9d0330d70ec0012de1440451c1
+- file: ..\src\config\pic32mm_curiosity\stdio\xc32_monitor.c
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+- file: ..\src\config\pic32mm_curiosity\toolchain_specifics.h
+  hash: b4de6e02e3e48c62f7ba233405ffdf6ef31bb971d1a7b49efa1676f45cabc1ac
+- file: ..\src\main_pic32mm_curiosity.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5
