@@ -1,0 +1,94 @@
+configVersion: 1.0.0
+componentName: adc
+coreVersion: 5.8.2
+device: PIC32MM0256GPM064
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: adc
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: adc
+          x: '319'
+          y: '19'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    AD1CHS__CH0SA:
+      attributes:
+        id: AD1CHS__CH0SA
+      children:
+      - children:
+        - attributes:
+            value: '14'
+          type: User
+        type: Values
+      type: KeyValueSet
+    AD1CON1__ASAM:
+      attributes:
+        id: AD1CON1__ASAM
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_AD1CHS:
+      attributes:
+        id: ADC_AD1CHS
+      children:
+      - children:
+        - attributes:
+            id: adc
+            value: '14'
+          type: Dynamic
+        type: Values
+      type: Hex
+    ADC_AD1CON1:
+      attributes:
+        id: ADC_AD1CON1
+      children:
+      - children:
+        - attributes:
+            id: adc
+            value: '4'
+          type: Dynamic
+        type: Values
+      type: Hex
+    ADC_INTERRUPT:
+      attributes:
+        id: ADC_INTERRUPT
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    ADC_TCLK:
+      attributes:
+        id: ADC_TCLK
+      children:
+      - children:
+        - attributes:
+            id: adc
+            value: '333.0'
+          type: Dynamic
+        type: Values
+      type: Float
+  userData: {}
