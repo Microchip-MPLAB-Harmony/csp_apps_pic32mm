@@ -19,7 +19,7 @@
 
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2021 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -53,13 +53,13 @@
 #include "plib_ccp1.h"
 #include "interrupts.h"
 
-volatile static CCP_TIMER_OBJECT ccp1Obj;
+static volatile CCP_TIMER_OBJECT ccp1Obj;
 
 
 void CCP1_TimerInitialize(void)
 {
     /* Disable Timer */
-    CCP1CON1CLR = _CCP1CON1_ON_MASK;
+    CCP1CON1 &= ~_CCP1CON1_ON_MASK;
 
     CCP1CON1 = 0x1e0;
 
@@ -73,20 +73,20 @@ void CCP1_TimerInitialize(void)
     /*Set period */
     CCP1PR = 62499U;
 
-    IEC2SET = _IEC2_CCT1IE_MASK;
+    IEC2 |= _IEC2_CCT1IE_MASK;
 
 }
 
 
 void CCP1_TimerStart(void)
 {
-    CCP1CON1SET = _CCP1CON1_ON_MASK;
+    CCP1CON1 |= _CCP1CON1_ON_MASK;
 }
 
 
 void CCP1_TimerStop (void)
 {
-    CCP1CON1CLR = _CCP1CON1_ON_MASK;
+    CCP1CON1 &= ~_CCP1CON1_ON_MASK;
 }
 
 void CCP1_Timer32bitPeriodSet(uint32_t period)
@@ -115,7 +115,7 @@ void __attribute__((used)) CCT1_InterruptHandler (void)
     /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
     uintptr_t context = ccp1Obj.context;
     uint32_t status = IFS2bits.CCT1IF;
-    IFS2CLR = _IFS2_CCT1IF_MASK;
+    IFS2 &= ~_IFS2_CCT1IF_MASK;
 
     if((ccp1Obj.callback_fn != NULL))
     {
@@ -127,13 +127,13 @@ void __attribute__((used)) CCT1_InterruptHandler (void)
 void CCP1_TimerInterruptEnable(void)
 {
 
-    IEC2SET = _IEC2_CCT1IE_MASK;
+    IEC2 |= _IEC2_CCT1IE_MASK;
 }
 
 
 void CCP1_TimerInterruptDisable(void)
 {
-    IEC2CLR = _IEC2_CCT1IE_MASK;
+    IEC2 &= ~_IEC2_CCT1IE_MASK;
 }
 
 
