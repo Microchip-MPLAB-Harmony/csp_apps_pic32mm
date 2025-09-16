@@ -1,0 +1,49 @@
+configVersion: 1.0.0
+coreVersion: 5.8.2
+device: PIC32MM0064GPL036
+deviceLibrary:
+  className: com.microchip.mcc.harmony.Harmony3Library
+groupModules: []
+modules:
+- core
+- dfp
+- spi2
+generatedFileHashHistoryMap:
+- file: ..\src\config\pic32mm_curiosity\definitions.h
+  hash: 4f756abb3e380ef732bfa05b1027a545365075b11eef15478f89f75337d7cae4
+- file: ..\src\config\pic32mm_curiosity\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\pic32mm_curiosity\exceptions.c
+  hash: 265c985839caadb2fa9e8fc76e7bc3c160e31e9b2c96dc4006add33e5d7ee212
+- file: ..\src\config\pic32mm_curiosity\initialization.c
+  hash: 56d6f44d973954c770582f8c115afe00a28ffea0df9ddbeaa124fb8cc1dc7f00
+- file: ..\src\config\pic32mm_curiosity\interrupts.c
+  hash: f24851c1d31257467a55d9cbce8b88c0a188c6637a24281c83e83fc1ffaaf922
+- file: ..\src\config\pic32mm_curiosity\interrupts.h
+  hash: db95bd146f261c629febf62e3d69624ece74d62ec76a43606b9c00317c3a7b43
+- file: ..\src\config\pic32mm_curiosity\p32MM0064GPL036.ld
+  hash: b0666b3654a7738979aa25d4c390bf6b0ddc8e819d2934dc349438be79605106
+- file: ..\src\config\pic32mm_curiosity\peripheral\clk\plib_clk.c
+  hash: c62b341fbecd973f1934be50076bad8603c98ae05efb8ffbb5400e3bd81f1327
+- file: ..\src\config\pic32mm_curiosity\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.c
+  hash: 27435b3872bed0b620d46f7447287eac84340c792c81f90a34a421178554115d
+- file: ..\src\config\pic32mm_curiosity\peripheral\evic\plib_evic.h
+  hash: 4e751bde98d6d45c1743efee8c9b14ab6f5bc030868ae8a990bd2753b3c58804
+- file: ..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.c
+  hash: e84f5c931c4b15b8b68dfde72ed4d6c9f183607049313dfc9b75d137e7a698a4
+- file: ..\src\config\pic32mm_curiosity\peripheral\gpio\plib_gpio.h
+  hash: f50157b71f7bd50dd4c1dcc298d0b72b52cdb54899f15e86783745ca2f0993cf
+- file: ..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi2_master.c
+  hash: db214cf95a05a4e7e2f3b8b2c1560518a41c22d782599b037c2eba8dfcd79077
+- file: ..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi2_master.h
+  hash: 5e78a42e59de34629f92f7916be364a44ed98f1fbaecd993eb121c485092d7d1
+- file: ..\src\config\pic32mm_curiosity\peripheral\spi\spi_master\plib_spi_master_common.h
+  hash: 844a71566e886cd1f28024000d440ac48841cdb4f4059f5feefac8e4334f12ef
+- file: ..\src\config\pic32mm_curiosity\stdio\xc32_monitor.c
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+- file: ..\src\config\pic32mm_curiosity\toolchain_specifics.h
+  hash: b4de6e02e3e48c62f7ba233405ffdf6ef31bb971d1a7b49efa1676f45cabc1ac
+- file: ..\src\main_pic32mm_curiosity.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5
