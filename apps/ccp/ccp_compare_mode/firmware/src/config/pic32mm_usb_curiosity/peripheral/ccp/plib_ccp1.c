@@ -16,7 +16,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-* Copyright (C) 2021 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -51,7 +51,7 @@
 void CCP1_CompareInitialize (void)
 {
     /* Disable Timer */
-    CCP1CON1CLR = _CCP1CON1_ON_MASK;
+    CCP1CON1 &= ~_CCP1CON1_ON_MASK;
 
     CCP1CON1 = 0x4;
 
@@ -67,22 +67,22 @@ void CCP1_CompareInitialize (void)
 
 void CCP1_CompareStart (void)
 {
-    CCP1CON1SET = _CCP1CON1_ON_MASK;
+    CCP1CON1 |= _CCP1CON1_ON_MASK;
 }
 
 void CCP1_CompareStop (void)
 {
-    CCP1CON1CLR = _CCP1CON1_ON_MASK;
+    CCP1CON1 &= ~_CCP1CON1_ON_MASK;
 }
 
 void CCP1_CompareAutoShutdownClear (void)
 {
-    CCP1STATCLR = _CCP1STAT_ASEVT_MASK;
+    CCP1STAT &= ~_CCP1STAT_ASEVT_MASK;
 }
 
 void CCP1_CompareAutoShutdownSet (void)
 {
-    CCP1CON2SET = _CCP1CON2_SSDG_MASK;
+    CCP1CON2 |= _CCP1CON2_SSDG_MASK;
 }
 
 

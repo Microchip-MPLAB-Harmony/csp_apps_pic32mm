@@ -1,0 +1,146 @@
+configVersion: 1.0.0
+componentName: ccp1
+coreVersion: 5.8.2
+device: PIC32MM0256GPM064
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: ccp1
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: ccp1
+          x: '321'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    CCPCON1_REG_VALUE:
+      attributes:
+        id: CCPCON1_REG_VALUE
+      children:
+      - children:
+        - attributes:
+            id: ccp1
+            value: '4'
+          type: Dynamic
+        type: Values
+      type: Hex
+    CCPCON2_REG_VALUE:
+      attributes:
+        id: CCPCON2_REG_VALUE
+      children:
+      - children:
+        - attributes:
+            id: ccp1
+            value: '16777216'
+          type: Dynamic
+        type: Values
+      type: Hex
+    CCPCON3_REG_VALUE:
+      attributes:
+        id: CCPCON3_REG_VALUE
+      children:
+      - children:
+        - attributes:
+            id: ccp1
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    CCP_CLOCK_FREQ:
+      attributes:
+        id: CCP_CLOCK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: ccp1
+            value: '24000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CCP_COMP_CCPCON1_MOD:
+      attributes:
+        id: CCP_COMP_CCPCON1_MOD
+      children:
+      - children:
+        - attributes:
+            value: '3'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CCP_COMP_CCPCON2_OCAEN:
+      attributes:
+        id: CCP_COMP_CCPCON2_OCAEN
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CCP_COMP_CCPPR:
+      attributes:
+        id: CCP_COMP_CCPPR
+      children:
+      - children:
+        - attributes:
+            value: '4800'
+          type: User
+        type: Values
+      type: Long
+    CCP_COMP_CCPRA:
+      attributes:
+        id: CCP_COMP_CCPRA
+      children:
+      - children:
+        - attributes:
+            value: '520'
+          type: User
+        type: Values
+      type: Long
+    CCP_OPERATION_MODE:
+      attributes:
+        id: CCP_OPERATION_MODE
+      children:
+      - children:
+        - attributes:
+            value: Compare
+          type: User
+        type: Values
+      type: Combo
+    CCP_PERIOD:
+      attributes:
+        id: CCP_PERIOD
+      children:
+      - children:
+        - attributes:
+            id: ccp1
+            value: '7199'
+          type: Dynamic
+        type: Values
+      type: Long
+    CCP_TIMER_INTERRUPT:
+      attributes:
+        id: CCP_TIMER_INTERRUPT
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+  userData: {}

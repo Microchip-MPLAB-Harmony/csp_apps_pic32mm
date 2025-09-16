@@ -1,0 +1,59 @@
+configVersion: 1.0.0
+coreVersion: 5.8.2
+device: PIC32MM0256GPM064
+deviceLibrary:
+  className: com.microchip.mcc.harmony.Harmony3Library
+groupModules: []
+modules:
+- ccp1
+- ccp2
+- ccp4
+- core
+- dfp
+generatedFileHashHistoryMap:
+- file: ..\src\config\pic32mm_usb_curiosity\definitions.h
+  hash: 5cc8cf368f1b9d50b8c8cde6b76876ab861ef4f6990257bdace7a640c8a3c423
+- file: ..\src\config\pic32mm_usb_curiosity\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\pic32mm_usb_curiosity\exceptions.c
+  hash: 265c985839caadb2fa9e8fc76e7bc3c160e31e9b2c96dc4006add33e5d7ee212
+- file: ..\src\config\pic32mm_usb_curiosity\initialization.c
+  hash: 276eb736a0c0cfac3f757afcf6578a749be024016c74bd805c816ceb8cbd50c8
+- file: ..\src\config\pic32mm_usb_curiosity\interrupts.c
+  hash: 0c01770ed386644f829fdb1911e47232f219efced8d37333cfc9d803dfcf2e14
+- file: ..\src\config\pic32mm_usb_curiosity\interrupts.h
+  hash: 9871d2338064bba7f96ca3ce0741256cbaf0a4e5bcd2ee31370ca1ffb7eb717f
+- file: ..\src\config\pic32mm_usb_curiosity\p32MM0256GPM064.ld
+  hash: 27f0c4872ab85faac358a7bb25b5e95f5515314aaee8a83042a5b48bffeceb4a
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\ccp\plib_ccp1.c
+  hash: af5283c48bf6c78eb33286c19b506326fb6a6c448b3b82be85c33388e6bb3bac
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\ccp\plib_ccp1.h
+  hash: afc05ef01d65a6a05efc9b7012d788920bb2b61957e5abe0b124e85ff8b3c6e8
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\ccp\plib_ccp2.c
+  hash: 54ee20c19e1271101444c14c1854b1f6d8b7fc3662551bc4b3a816d4f8ca61b5
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\ccp\plib_ccp2.h
+  hash: 3bb531ee4d0d617401ad942742ecc051a5766cf2b745aedae24566bd04ead4cb
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\ccp\plib_ccp4.c
+  hash: 641fed7ed860a203648714459c6298e88b9e39a5577ff3658fb4a743b94cae2e
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\ccp\plib_ccp4.h
+  hash: 3c77599e4e3bb2dae8fd0791183d92d1dfa38cc2f9830613a49721b5abc6a7d2
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\ccp\plib_ccp_common.h
+  hash: efad9e78df8ac23820abac663ab42b1a0989b2784987341cf3b90a041c13eb08
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\clk\plib_clk.c
+  hash: 0932f7de12ec0c7686d6c7fbde8e03ef5983dcfbfe3a2d3caa7958db7ebae453
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\evic\plib_evic.c
+  hash: e962a76ba59698ad6f53c1a4086b1c9881da3daec2e9ba1c316b79e7b2036a0c
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\evic\plib_evic.h
+  hash: 51ee35d6c1a13447fe5d8b63cd7a0e8b8ef10c991bb8ff47490daf855f55fcf1
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\gpio\plib_gpio.c
+  hash: e898303e88e7fd8bee46c22e6ef1296f3809efcd98ae00295635cd6ab87ddc29
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\gpio\plib_gpio.h
+  hash: ef55b889aedfc59e020698ff0b992e12f48798c81356604315694995dfbf2657
+- file: ..\src\config\pic32mm_usb_curiosity\stdio\xc32_monitor.c
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+- file: ..\src\config\pic32mm_usb_curiosity\toolchain_specifics.h
+  hash: b4de6e02e3e48c62f7ba233405ffdf6ef31bb971d1a7b49efa1676f45cabc1ac
+- file: ..\src\main.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5

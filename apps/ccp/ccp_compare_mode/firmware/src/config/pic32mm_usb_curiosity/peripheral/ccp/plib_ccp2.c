@@ -16,7 +16,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-* Copyright (C) 2021 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -48,11 +48,11 @@
 
 // *****************************************************************************
 
-volatile static CCP_TIMER_OBJECT ccp2TimerObj;
+static volatile CCP_TIMER_OBJECT ccp2TimerObj;
 void CCP2_CompareInitialize (void)
 {
     /* Disable Timer */
-    CCP2CON1CLR = _CCP2CON1_ON_MASK;
+    CCP2CON1 &= ~_CCP2CON1_ON_MASK;
 
     CCP2CON1 = 0x3;
 
@@ -64,27 +64,27 @@ void CCP2_CompareInitialize (void)
     CCP2RA = 500;
     CCP2RB = 1000;
 
-    IEC2SET = _IEC2_CCT2IE_MASK;
+    IEC2 |= _IEC2_CCT2IE_MASK;
 }
 
 void CCP2_CompareStart (void)
 {
-    CCP2CON1SET = _CCP2CON1_ON_MASK;
+    CCP2CON1 |= _CCP2CON1_ON_MASK;
 }
 
 void CCP2_CompareStop (void)
 {
-    CCP2CON1CLR = _CCP2CON1_ON_MASK;
+    CCP2CON1 &= ~_CCP2CON1_ON_MASK;
 }
 
 void CCP2_CompareAutoShutdownClear (void)
 {
-    CCP2STATCLR = _CCP2STAT_ASEVT_MASK;
+    CCP2STAT &= ~_CCP2STAT_ASEVT_MASK;
 }
 
 void CCP2_CompareAutoShutdownSet (void)
 {
-    CCP2CON2SET = _CCP2CON2_SSDG_MASK;
+    CCP2CON2 |= _CCP2CON2_SSDG_MASK;
 }
 
   
@@ -130,7 +130,7 @@ void __attribute__((used)) CCT2_InterruptHandler (void)
     /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
     uintptr_t context = ccp2TimerObj.context;
     uint32_t status = IFS2bits.CCT2IF;
-    IFS2CLR = _IFS2_CCT2IF_MASK;    //Clear IRQ flag
+    IFS2 &= ~_IFS2_CCT2IF_MASK;    //Clear IRQ flag
 
     if( (ccp2TimerObj.callback_fn != NULL))
     {
