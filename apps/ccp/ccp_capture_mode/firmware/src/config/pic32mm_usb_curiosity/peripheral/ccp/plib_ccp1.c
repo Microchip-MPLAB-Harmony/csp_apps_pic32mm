@@ -16,7 +16,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-* Copyright (C) 2021 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -50,7 +50,7 @@
 void CCP1_CaptureInitialize (void)
 {
     /* Disable Timer */
-    CCP1CON1CLR = _CCP1CON1_ON_MASK;
+    CCP1CON1 &= ~_CCP1CON1_ON_MASK;
 
     CCP1CON1 = 0x13;
 
@@ -63,13 +63,13 @@ void CCP1_CaptureInitialize (void)
 
 void CCP1_CaptureStart (void)
 {
-    CCP1CON1SET = _CCP1CON1_ON_MASK;
+    CCP1CON1 |= _CCP1CON1_ON_MASK;
 }
 
 
 void CCP1_CaptureStop (void)
 {
-    CCP1CON1CLR = _CCP1CON1_ON_MASK;
+    CCP1CON1 &= ~_CCP1CON1_ON_MASK;
 }
 
 uint16_t CCP1_Capture16bitBufferRead (void)
