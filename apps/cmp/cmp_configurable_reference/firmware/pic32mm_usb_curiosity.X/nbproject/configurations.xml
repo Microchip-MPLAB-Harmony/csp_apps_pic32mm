@@ -33,9 +33,19 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity" displayName="cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity" projectFiles="true">
+        <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity/components/cdac1.yml</itemPath>
+          <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity/components/cmp.yml</itemPath>
+          <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity/components/core.yml</itemPath>
+          <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity/components/dfp.yml</itemPath>
+          <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity/components/stdio.yml</itemPath>
+          <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity_pic32mm_usb_curiosity/components/uart3.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32mm_usb_curiosity/harmony-manifest-success.yml</itemPath>
-      <itemPath>cmp_configurable_reference_pic32mm_usb_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
@@ -91,7 +101,7 @@
         <targetPluginBoard/>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>

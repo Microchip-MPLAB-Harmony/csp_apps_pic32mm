@@ -1,0 +1,104 @@
+configVersion: 1.0.0
+componentName: cmp
+coreVersion: 5.8.2
+device: PIC32MM0256GPM064
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: cmp
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: cmp
+          x: '320'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    CMP_1_CON_VALUE:
+      attributes:
+        id: CMP_1_CON_VALUE
+      children:
+      - children:
+        - attributes:
+            id: cmp
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    CMP_2_CON_CCH:
+      attributes:
+        id: CMP_2_CON_CCH
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CMP_2_CON_CREF:
+      attributes:
+        id: CMP_2_CON_CREF
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CMP_2_CON_EVPOL:
+      attributes:
+        id: CMP_2_CON_EVPOL
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CMP_2_CON_VALUE:
+      attributes:
+        id: CMP_2_CON_VALUE
+      children:
+      - children:
+        - attributes:
+            id: cmp
+            value: '80'
+          type: Dynamic
+        type: Values
+      type: Hex
+    CMP_CMSTAT_CVREFSEL:
+      attributes:
+        id: CMP_CMSTAT_CVREFSEL
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CMP_CMSTAT_VALUE:
+      attributes:
+        id: CMP_CMSTAT_VALUE
+      children:
+      - children:
+        - attributes:
+            id: cmp
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+  userData: {}
