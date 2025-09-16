@@ -18,7 +18,7 @@
 *******************************************************************************/
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2021 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -87,7 +87,7 @@ static uint32_t CRC_BitReverse( uint32_t num, uint32_t bits)
 
 void CRC_CRCSetup(CRC_SETUP CRCSetup)
 {
-	uint8_t temp = (gCRCSetup.polynomial_length - 1U);
+    uint8_t temp = (gCRCSetup.polynomial_length - 1U);
     gCRCSetup.reverse_crc_input     = CRCSetup.reverse_crc_input;
     gCRCSetup.polynomial_length     = CRCSetup.polynomial_length;
     gCRCSetup.polynomial            = CRCSetup.polynomial;
@@ -140,7 +140,7 @@ uint32_t CRC_CRCCalculate(void *buffer, uint32_t length, uint32_t seed)
     CRCWDAT = seed;
 
     /* Clear the interrupt flag */
-    IFS0CLR = _IFS0_CRCIF_MASK;
+    IFS0 &= ~_IFS0_CRCIF_MASK;
 
     /* Start CRC Calculation */
     CRCCONbits.CRCGO = 1;
@@ -163,7 +163,7 @@ uint32_t CRC_CRCCalculate(void *buffer, uint32_t length, uint32_t seed)
     /* Suspend CRC Calculation and Clear interrupt flag */
     CRCCONbits.CRCGO = 0;
 
-    IFS0CLR = _IFS0_CRCIF_MASK;
+    IFS0 &= ~_IFS0_CRCIF_MASK;
 
     /* Write the last Data into FIFO for completing the CRC Calculation */
     *((volatile uint8_t *)&CRCDAT) = *buffer_8;
