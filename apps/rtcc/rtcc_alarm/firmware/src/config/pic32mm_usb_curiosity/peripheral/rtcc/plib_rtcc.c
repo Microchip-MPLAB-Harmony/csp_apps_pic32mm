@@ -68,7 +68,7 @@ typedef struct SYS_RTCC_OBJ_STRUCT
 
 } RTCC_OBJECT;
 
-volatile static RTCC_OBJECT rtcc;
+static volatile RTCC_OBJECT rtcc;
 
 
 // *****************************************************************************
@@ -214,7 +214,7 @@ bool RTCC_AlarmSet( struct tm *alarmTime, RTCC_ALARM_MASK alarmFreq )
     RTCC_InterruptDisable(RTCC_INT_ALARM);
 
     RTCCON1CLR = _RTCCON1_ALRMEN_MASK;  /* Disable alarm */
-    while((RTCSTATbits.ALMSYNC) != 0U)  
+    while((RTCSTATbits.ALMSYNC) != 0U)
     {
         /* Wait for disable */
     }
