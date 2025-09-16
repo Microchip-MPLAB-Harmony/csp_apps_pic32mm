@@ -1,0 +1,53 @@
+configVersion: 1.0.0
+coreVersion: 5.8.2
+device: PIC32MM0256GPM064
+deviceLibrary:
+  className: com.microchip.mcc.harmony.Harmony3Library
+groupModules: []
+modules:
+- core
+- dfp
+- i2c1
+generatedFileHashHistoryMap:
+- file: ..\src\config\pic32mm_usb_curiosity\definitions.h
+  hash: 8bec0e331464ea9d6659648d1d858a61daa373c10eff0c6c60c6ffcb331047df
+- file: ..\src\config\pic32mm_usb_curiosity\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\pic32mm_usb_curiosity\exceptions.c
+  hash: 265c985839caadb2fa9e8fc76e7bc3c160e31e9b2c96dc4006add33e5d7ee212
+- file: ..\src\config\pic32mm_usb_curiosity\initialization.c
+  hash: cfb70a7dcff28ddbf066d154ef8ef8fb7648ed6bd2c42ebb59e6ade09cb0854a
+- file: ..\src\config\pic32mm_usb_curiosity\interrupts.c
+  hash: e21561dc339e0c006c13ad46dc219df91d0ad713bd461a13cbb6af6898bded92
+- file: ..\src\config\pic32mm_usb_curiosity\interrupts.h
+  hash: f691f48c8047b568d00a9b72b0d7b64f8d5c8ced8727c4b822efdf9fe2f55d57
+- file: ..\src\config\pic32mm_usb_curiosity\p32MM0256GPM064.ld
+  hash: 27f0c4872ab85faac358a7bb25b5e95f5515314aaee8a83042a5b48bffeceb4a
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\clk\plib_clk.c
+  hash: a55dc5aa881b9a0ea62331206c7a0c3dd4dc67311b1fdf712ac1fba1b7e4800c
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\evic\plib_evic.c
+  hash: af457f92fd6d747a7e7f161d5eee6aa62698d4ec0385cd700207529626bd5b76
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\evic\plib_evic.h
+  hash: 51ee35d6c1a13447fe5d8b63cd7a0e8b8ef10c991bb8ff47490daf855f55fcf1
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\gpio\plib_gpio.c
+  hash: e06593ca891ba8ac1f177dfa99e95634b5cc8804a439349318217e60e481e036
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\gpio\plib_gpio.h
+  hash: df65b08eec000a0187c980831ccc01157350298e65939b64e77cc84d76f55b03
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\i2c\master\plib_i2c1_master.c
+  hash: 7e7c7dd2f5bc6c63d86ce0db76db461f14ce54a833a2031c4f5fdfbdc7138d30
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\i2c\master\plib_i2c1_master.h
+  hash: 396c911f1890ead8e84888dc838cacaab7f1d86b4de6f538ac545723f1058a1e
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\i2c\master\plib_i2c_master_common.h
+  hash: e8e91fe4308eb9028f18cdb9ac7db5b82b0c3869c0911f884b9359940eedb411
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\i2c\plib_i2c_smbus_common.c
+  hash: 026121a1d5fae1028604b3031f89253ed36f588d037beb3722351261ce514dd2
+- file: ..\src\config\pic32mm_usb_curiosity\peripheral\i2c\plib_i2c_smbus_common.h
+  hash: 585f8d40c9fcaa072abdf3039cbc4b26ee3fbcb902171dd7e79a682e3973f995
+- file: ..\src\config\pic32mm_usb_curiosity\stdio\xc32_monitor.c
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+- file: ..\src\config\pic32mm_usb_curiosity\toolchain_specifics.h
+  hash: b4de6e02e3e48c62f7ba233405ffdf6ef31bb971d1a7b49efa1676f45cabc1ac
+- file: ..\src\main.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5
